@@ -1,5 +1,5 @@
 /*styles for my resume*/
-body{
+body {
   font-size: 12px;
   color: #444;
   font-family: "Open Sans", Arial, sans-serif;
@@ -9,35 +9,32 @@ h1, h2, h4, h5, p, ul, li{
   font-weight: 300;
 }
 /*banner name at top*/
-h1{
+h1 {
   font-size: 4em;
   text-align: center;
-  line-height: 0;
 }
 /*section titles*/
-h2{
+h2 {
   font-size: 2em;
-  line-height: 1em;
   text-transform: uppercase;
   background-color: #b1b1b1;
-  color: rgba(255, 255, 255, 1)
+  color: rgba(255, 255, 255, 1);
 }
 /*job titles*/
-h3{
+h3 {
   font-weight: 600;
-  line-height: 1em;
   font-size: 1.5em;
 }
 /*job organization*/
-h4{
+h4 {
   font-size: 1.33em;
 }
 /*job dates*/
-h5{
+h5 {
   font-style: italic;
   font-size: 1em;
 }
 /*contact info, skills, edu*/
-ul, li{
+ul, li {
   font-size: 1.1em;
 }
