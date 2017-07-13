@@ -1,40 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  font-weight: 300;
+}
+
 /*styles for my resume*/
 body {
   font-size: 12px;
   color: #444;
   font-family: "Open Sans", Arial, sans-serif;
 }
+
 /*bold font setting for doc*/
 h1, h2, h4, h5, p, ul, li{
   font-weight: 300;
 }
+
+/*changed h1 to #name*/
 /*banner name at top*/
-h1 {
+#name {
   font-size: 4em;
   text-align: center;
+  border-bottom: 1px solid #FDB020;
+  width: 60%;
+  min-width: 300px;
+  margin: 5px auto;
 }
+
+/*changed h2 to sectionheader*/
 /*section titles*/
-h2 {
+.sectionheader {
   font-size: 2em;
   text-transform: uppercase;
   background-color: #b1b1b1;
   color: rgba(255, 255, 255, 1);
+  margin: 0 0 10px 0;
+  text-align: center;
+  width: 30%;
+  min-width: 150px;
+  border-bottom: 1px solid #FDB020;
 }
+
+/*changed h3 to jobtitle*/
 /*job titles*/
-h3 {
+.jobtitle {
   font-weight: 600;
   font-size: 1.5em;
 }
+
+/*changed h4 to organization*/
 /*job organization*/
-h4 {
+.organization {
   font-size: 1.33em;
 }
+
+/*changed h5 to date*/
 /*job dates*/
-h5 {
+.date {
   font-style: italic;
   font-size: 1em;
+  margin: 2px 0 0 0;
 }
+
+.description {
+  margin: 10px 0 0 0;
+}
+
+/*changed ul to menu*/
 /*contact info, skills, edu*/
 ul, li {
   font-size: 1.1em;
+}
+
+.menu {
+  margin: 0
+  padding: 0
+  text
 }
