@@ -18,6 +18,10 @@ h1, h2, h4, h5, p, ul, li{
   font-weight: 300;
 }
 
+#top {
+  margin: 0 0 35px 0;
+}
+
 /*changed h1 to #name*/
 /*banner name at top*/
 #name {
@@ -38,6 +42,10 @@ h1, h2, h4, h5, p, ul, li{
 
 .menu li {
   display: inline;
+}
+
+#bottom {
+  margin: 0 0 0 10px;
 }
 
 /*changed h2 to sectionheader*/
