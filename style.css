@@ -21,7 +21,7 @@ h1, h2, h4, h5, p, ul, li{
 }
 
 #top {
-  margin: 0 0 35px 0;
+  margin: 0 auto 35px auto;
   padding: 0 0 10px 0;
   background-color: #FFFFFF;
   width: 100%;
@@ -50,6 +50,11 @@ h1, h2, h4, h5, p, ul, li{
 
 .menu li {
   display: inline;
+}
+
+a:link {
+  text-decoration: none;
+  color: #444;
 }
 
 #bottom {
@@ -84,10 +89,6 @@ h1, h2, h4, h5, p, ul, li{
   overflow: auto;
   border: 1px solid #f2f2f2;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-#experience {
-  margin: 0 0 20px 0;
 }
 
 .alljobs {
@@ -129,23 +130,18 @@ h1, h2, h4, h5, p, ul, li{
 
 /*contact info, skills, edu*/
 ul, li {
-  font-size: 1.1em;
+  font-size: 1.1em
 }
 
-#education {
-  margin: 0 0 20px 0;
+.degrees, .do {
+  margin: 0 auto 0 4%;
+  width: 65%;
+  float: left;
+  list-style-type: none;
+  -webkit-padding-start: 21px;
+  border-left: 1px solid rgba(253, 176, 32, 0.3);
 }
 
-/*added this 6/13*/
-.degrees {
-  margin: 5px 0 0 0;
-}
-
-#skills {
-  margin: 0 0 20px 0;
-}
-
-/*added this 6/13*/
-.do {
-  margin: 5px 0 0 0;
+.degrees, .do li {
+  margin-bottom: 3px;
 }
