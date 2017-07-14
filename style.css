@@ -68,15 +68,34 @@ h1, h2, h4, h5, p, ul, li{
   text-transform: uppercase;
   background-color: #b1b1b1;
   color: rgba(255, 255, 255, 1);
-  margin: 0 0 10px 0;
+  margin: 7px 0 10px 0;
   text-align: center;
   width: 30%;
   min-width: 150px;
-  border-bottom: 1px solid #FDB020;
+  border-bottom: 1px solid rgba(253, 176, 32, 0.4);
+  float: left;
+}
+
+#experience, #education, #skills {
+  margin: 0 auto 20px auto;
+  padding: 10px 10px;
+  width: 90%;
+  height: auto;
+  overflow: auto;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 #experience {
   margin: 0 0 20px 0;
+}
+
+.alljobs {
+  width: 65%;
+  float: left;
+  margin: 0 0 0 4%;
+  border-left: 1px solid rgba(253, 176, 32, 0.3);
+  padding: 0 0 0 20px;
 }
 
 .job {
