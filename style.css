@@ -11,6 +11,8 @@ body {
   font-size: 12px;
   color: #444;
   font-family: "Open Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /*bold font setting for doc*/
@@ -20,6 +22,12 @@ h1, h2, h4, h5, p, ul, li{
 
 #top {
   margin: 0 0 35px 0;
+  padding: 0 0 10px 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 1px 1px 0 rgba(1,1,1,0.2);
 }
 
 /*changed h1 to #name*/
@@ -45,7 +53,12 @@ h1, h2, h4, h5, p, ul, li{
 }
 
 #bottom {
-  margin: 0 0 0 10px;
+  margin: 0 auto;
+  position: relative;
+  top: 120px;
+  width: 95%;
+  height: auto;
+  overflow: auto;
 }
 
 /*changed h2 to sectionheader*/
