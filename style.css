@@ -146,6 +146,10 @@ ul, li {
   margin-bottom: 3px;
 }
 
+.bolding {
+  font-weight: 600;
+}
+
 /*extra small devices, phones*/
 @media only screen and (max-width: 767px) {
   #top {
