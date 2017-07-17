@@ -145,3 +145,51 @@ ul, li {
 .degrees, .do li {
   margin-bottom: 3px;
 }
+
+/*extra small devices, phones*/
+@media only screen and (max-width: 767px) {
+  #top {
+    position: relative;
+  }
+  #bottom {
+    position: relative;
+    top: 0;
+  }
+  #name {
+    font-size: 3em;
+  }
+  .alljobs {
+    padding: 10px 10px;
+    margin: 0 0;
+    width: 100%;
+    border: none;
+  }
+  .sectionheader {
+    margin: 10px auto 15px auto;
+    padding: 5px 10px;
+    width: 97%;
+    min-width: 0;
+    text-align: center;
+    float: none;
+  }
+  .degrees, .do {
+    margin: 15px 2% 0 2%;
+    padding: 0 20px;
+    width: 100%;
+    float: none;
+    border: none;
+    -webkit-padding-start: 0;
+  }
+}
+/*small devices, tablets*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+/*medium devices, desktops*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/*large devices, desktops*/
+@media only screen and (min-width: 1200px) {
+
+}
