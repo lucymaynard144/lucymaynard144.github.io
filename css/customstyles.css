@@ -2,26 +2,39 @@
 /*These initial styles come from here: http://getbootstrap.com/examples/starter-template/starter-template.css*/
 body {
   background-color: black;
+  font-family: "Libre Franklin", Arial, sans-serif;
 }
+
+
 
 #top {
   padding: 50px 0 0 0;
+  margin: 0 16px 24px 16px;
   text-align: center;
-  margin: 0 0 24px 0;
   background-color: white;
 }
 
 #name {
-  font-size: 48px;
+  font-size: 56px;
+  font-weight: 600;
 }
 
 .contactinfo {
+  -webkit-padding-start: 0;
+}
+
+.contactinfo li {
   color: #444;
   display: inline;
+  list-style-type: none;
 }
 
 #bottom {
   background-color: white;
+}
+
+#workinternational {
+  padding-bottom: 50px;
 }
 
 .sectionheader {
