@@ -3,12 +3,14 @@
 
 /*black background was inspired from one of the example resumes*/
 body {
-  background-color: black;
+  background-color: #171615;
   font-family: "Libre Franklin", sans-serif;
 }
 
-.navbar-header {
+.navbar {
   font-family: "Libre Franklin";
+  background-color: #003399;
+  color: white;
 }
 
 /*padding is to get my name down from behind the nav bar*/
@@ -30,10 +32,11 @@ body {
 }
 
 /*I need to remember the li to display things inline*/
-.contactinfo li {
-  color: #444;
+.contactinfo li,.contactinfo li a, .contactinfo li a:hover, .contactinfo li a:visited {
+  color: #003399;
   display: inline;
   list-style-type: none;
+  text-decoration: none;
 }
 
 /*includes all resume sections except name and contact*/
@@ -139,7 +142,13 @@ footer {
   }
   #workexperience {
     border: none;
+    padding: 20px 8px 0 10px;
   }
+
+  #workinternational{
+    padding-bottom: 8px;
+  }
+
   #internationalexperience {
     border: none;
   }
@@ -161,18 +170,23 @@ footer {
   }
   #workexperience {
     border: none;
-    padding: 20px 8px;
+    padding: 20px 8px 0 10px;
 }
   #internationalexperience {
     border: none;
   }
-  
+
+  #workinternational {
+  padding-bottom: 8px;
+}
   }
   #skills {
     border: none;
+    padding-bottom: 0;
   }
   #education {
     border: none;
+    padding-bottom: 0;
   }
   #references {
     border: none;
