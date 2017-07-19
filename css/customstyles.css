@@ -7,6 +7,10 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
 
+.navbar-header {
+  font-family: "Libre Franklin";
+}
+
 /*padding is to get my name down from behind the nav bar*/
 #top {
   padding: 50px 0 0 0;
@@ -81,6 +85,7 @@ body {
   font-style: italic;
 }
 
+/*work, int'l, edu, skills, ref should all have almost the same styling*/
 #workexperience {
   border: 1px solid black;
   margin: 0 0 24px 0;
@@ -149,6 +154,7 @@ footer {
   }
 }
 
+/*i should have to make almost the same changes as in my previous media query*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #top {
     margin: 0 1px 16px 1px;
@@ -159,6 +165,8 @@ footer {
 }
   #internationalexperience {
     border: none;
+  }
+  
   }
   #skills {
     border: none;
