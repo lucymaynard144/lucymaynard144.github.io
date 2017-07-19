@@ -1,10 +1,13 @@
 /* No CSS Reset with Bootstrap */
 /*These initial styles come from here: http://getbootstrap.com/examples/starter-template/starter-template.css*/
+
+/*black background was inspired from one of the example resumes*/
 body {
   background-color: black;
   font-family: "Libre Franklin", sans-serif;
 }
 
+/*padding is to get my name down from behind the nav bar*/
 #top {
   padding: 50px 0 0 0;
   margin: 0 16px 24px 16px;
@@ -12,6 +15,7 @@ body {
   background-color: white;
 }
 
+/*same boldness as sectionheaders I might decide to change late*/
 #name {
   font-size: 56px;
   font-weight: 600;
@@ -21,20 +25,24 @@ body {
   -webkit-padding-start: 0;
 }
 
+/*I need to remember the li to display things inline*/
 .contactinfo li {
   color: #444;
   display: inline;
   list-style-type: none;
 }
 
+/*includes all resume sections except name and contact*/
 #bottom {
   background-color: white;
 }
 
+/*these two sections are in a div together*/
 #workinternational {
   padding-bottom: 50px;
 }
 
+/*edu, intl, skills, etc*/
 .sectionheader {
   font-size: 36px;
   font-weight: 600;
@@ -55,16 +63,19 @@ body {
   font-style: italic;
 }
 
+/*same styling as .jobtitle*/
 .programtitle {
   font-size: 20px;
   margin: 4px 0 0 0;
   text-decoration: underline;
 }
 
+/*same styling as .organization*/
 .location {
   font-size: 16px;
 }
 
+/*same styling as .date*/
 .programdate {
   font-size: 14px;
   font-style: italic;
@@ -83,6 +94,7 @@ body {
   padding: 8px 8px;
 }
 
+/*skills, edu, ref are in a div*/
 #skills {
   border: 1px solid black;
   margin: 0 0 24px 0;
@@ -109,11 +121,13 @@ body {
   margin: 6px 0 0 0;
 }
 
+/*new addition to my coding*/
 footer {
   color: white;
   text-align: center;
 }
 
+/*will need to change the #top margin at each media query*/
 @media only screen and (max-width:767px){
   #top {
     margin: 0 1px 16px 1px;
@@ -158,7 +172,7 @@ footer {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  
+
 }
 
 @media only screen and (min-width: 1200px) {
