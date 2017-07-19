@@ -2,10 +2,8 @@
 /*These initial styles come from here: http://getbootstrap.com/examples/starter-template/starter-template.css*/
 body {
   background-color: black;
-  font-family: "Libre Franklin", Arial, sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
-
-
 
 #top {
   padding: 50px 0 0 0;
@@ -109,4 +107,9 @@ body {
   text-decoration: underline;
   font-size: 16px;
   margin: 6px 0 0 0;
+}
+
+footer {
+  color: white;
+  text-align: center;
 }
