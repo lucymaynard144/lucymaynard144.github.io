@@ -9,8 +9,12 @@ body {
 
 .navbar {
   font-family: "Libre Franklin";
-  background-color: #003399;
+  background-color: #0077B4;
   color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-brand {
+  color: white !important;
 }
 
 /*padding is to get my name down from behind the nav bar*/
@@ -33,7 +37,7 @@ body {
 
 /*I need to remember the li to display things inline*/
 .contactinfo li,.contactinfo li a, .contactinfo li a:hover, .contactinfo li a:visited {
-  color: #003399;
+  color: #0077B4;
   display: inline;
   list-style-type: none;
   text-decoration: none;
