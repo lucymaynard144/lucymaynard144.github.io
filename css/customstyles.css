@@ -223,6 +223,7 @@ footer {
 
 footer {
   padding-bottom: 50px;
+  padding-top: 20px;
 }
 }
 
@@ -268,7 +269,8 @@ footer {
   }
 
   footer {
-    padding-bottom: 200px;
+    padding-bottom: 50px;
+    padding-top: 20px;
   }
 }
 
