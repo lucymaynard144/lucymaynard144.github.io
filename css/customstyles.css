@@ -180,6 +180,7 @@ body {
 footer {
   color: white;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /*will need to change the #top margin at each media query*/
