@@ -16,3 +16,69 @@ h1 {
   font-size: 5rem;
   font-weight: 600;
 }
+
+.byline {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #777;
+  margin: 15px 0 20px 0;
+  font-style: italic;
+  text-transform: uppercase:
+}
+
+.lead p {
+  font-size: 1.75rem;
+}
+
+.graphiccontainer {
+  margin: 0 0 20px 0;
+  padding: 20px 20px;
+}
+
+.textblock {
+  margin: 0 20px 0 0;
+  padding: 0 20px 0 20px;
+}
+
+.graphictitle h2 {
+  font-size: 2.5rem;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.graphictext {
+  margin: 15px 0 0 0;
+}
+
+.graphictext p {
+  font-size: 1.35rem;
+}
+
+.graphicblock {
+  padding: 0 20px 0 20px;
+  border-left: 2px solid #777;
+}
+
+@media only screen and (max-width: 767px) {
+  .textblock {
+    margin: 0 0;
+    padding: 20px 20px;
+  }
+
+  .graphicblock {
+    padding: 20px 20px;
+
+  }
+
+  .topsection {
+    padding: 20px 20px;
+  }
+
+  .topsection h1 {
+    font-size: 3.8rem;
+  }
+
+  .graphicblock {
+
+  }
+}
