@@ -70,7 +70,7 @@ body {
   z-index: 1;
   position: absolute;
   bottom: 10px;
-  left: 20px;
+  left: 40px;
   background-color: #eee;
 }
 
@@ -104,6 +104,22 @@ body {
 
 .semifinals {
   background-color: #a8201a;
+}
+
+.quarterfinals {
+  background-color: #ec9a29;
+}
+
+.round16 {
+  background-color: #0f8b8d;
+}
+
+.round32 {
+  background-color: #dad2d8;
+}
+
+.roundnotinwc {
+  background-color: #ffffff;
 }
 
 @media only screen and (max-width: 767px) {
