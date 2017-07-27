@@ -150,7 +150,86 @@
       </div>
     </div>
 
+    <div class="row graphiccontainer" id="five">
+      <div class="col-sm-3 col-sm-offset-1 textblock">
+        <div class="col-sm-12 graphictitle">
+          <h2>A Passing Machine</h2>
+        </div>
+        <div class="col-sm-12 graphictext">
+          <p>Germany moved the ball around the field at a rapid clip throughout the tournament, passing the ball an average of 726 times per game -- well above the median of 513 passes for all 32 teams.</p>
+        </div>
+      </div>
 
+      <div class="col-sm-7 graphicblock">
+        <div class="col-sm-12 graphiccontent">
+          <div id="passeschart"></div>
+          <script src="chart/Highcharts-5.0.13/code/highcharts.js"></script>
+          <script>
+            Highcharts.chart('passeschart', {
+              chart: {
+                type: 'bar'
+              },
+              title: {
+                text: 'Average Number of Passes per Game by World Cup Quarterfinalists'
+              },
+              subtitle: {
+                text: 'Source: <a href="http://www.fifa.com/worldcup/archive/brazil2014/statistics/teams/passes.html">FIFA</a>'
+              },
+              xAxis: {
+                type: 'category',
+                labels: {
+                  rotation: 0,
+                  style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                  }
+                }
+              },
+              yAxis: {
+                min: 0,
+                  title: {
+                    text: 'Average number of passes per game'
+                  }
+              },
+              legend: {
+                enabled: false
+              },
+              tooltip: {
+                enabled: false
+              },
+              credits: {
+                enabled: false
+              },
+              series: [{
+                name: 'Population',
+                data: [
+                  ['Germany', 726],
+                  ['Argentina', 617],
+                  ['France', 552],
+                  ['Netherlands', 551],
+                  ['Belgium', 534],
+                  ['Brazil', 516],
+                  ['Costa Rica', 448],
+                  ['Colombia', 414]
+                ],
+                dataLabels: {
+                  enabled: true,
+                  rotation: 0,
+                  color: '#000000',
+                  align: 'right',
+                  format: '{point.y}',
+                  y: 0, // 10 pixels down from the top
+                  style: {
+                    fontSize: '9px',
+                    fontFamily: 'Verdana, sans-serif'
+                  }
+                }
+              }]
+            });
+          </script>
+        </div>
+      </div>
+    </div>
 
 
 
