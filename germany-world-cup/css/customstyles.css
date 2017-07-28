@@ -138,6 +138,11 @@ body {
   max-width: 600%;
 }
 
+#winlosschart {
+  width: 100%;
+  height: 800px;
+}
+
 @media only screen and (max-width: 767px) {
   .textblock {
     margin: 0 0;
