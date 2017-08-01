@@ -42,39 +42,39 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Top</a></li>
-            <li><a href="#1">1</a></li>
-            <li><a href="#2">2</a></li>
-            <li><a href="#3">3</a></li>
-            <li><a href="#4">4</a></li>
-            <li><a href="#5">5</a></li>
-            <li><a href="#6">6</a></li>
+            <li><a href="#graphone">1</a></li>
+            <li><a href="#graphtwo">2</a></li>
+            <li><a href="#graphthree">3</a></li>
+            <li><a href="#graphfour">4</a></li>
+            <li><a href="#graphfive">5</a></li>
+            <li><a href="#graphsix">6</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav><!--end of navbar-->
 
-    <div class="topsection">
-      <div class="col-sm-6 col-sm-offset-3 topbox">
+    <div class="topsection row">
+      <div class="col-sm-12 col-xs-12 col-md-12 col-l-12 topbox">
         <h1>A Visual Look at Our Favorite Movies</h1>
         <div class="byline"><span class="lowercase">by</span> LUCY MAYNARD</span></div>
         <div class="subtitle">There are movies we think are good and movies we all pay to go see. These movies are not always the same. This is a visual look at our favorite movies, using IMDB ratings and data of box office ticket sales (adjusted for inflation) from Box Office Mojo</div>
       </div>
-    </div>
+    </div><!--closes topsection-->
 
-    <div class="graphcontainer" id="one">
-      <div class="timelineinfo col-md-6 col-sm-12 col-xs-12">
+    <div class="graphcontainer row" id="one">
+      <div class="timelineinfo col-md-6 col-sm-12 col-xs-12" id="graphone">
         <div class="graphtitle">
           <h2>Movies Through the Years</h2>
         </div>
         <div class="graphtext">
           <p>The 200 top grossing movies span 10 decades. Scroll through the timeline to see which movie reigned supreme at the box office in each decade from the 1920's to now.</p>
         </div>
-        <div class="graphcontent">
+        <div class="graphcontent" id="timeline">
           <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1jcuruqjMwHPj2BS3fhl9r44vfH4ihH9zlEFpsMq_haA&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
         </div>
       </div> <!--closes timelineinfo-->
 
-      <div class="globalmap col-md-6 col-sm-12 col-xs-12">
+      <div class="globalmap col-md-6 col-sm-12 col-xs-12" id="graphtwo">
         <div class="graphtitle">
           <h2>Global Box Office</h2>
         </div>
@@ -98,570 +98,57 @@
           <a href="http://www.prb.org/pdf16/prb-wpds2016-web-2016.pdf" target="_blank">Population Reference Bureau</a>
         </div><!--closes sourcelinks-->
       </div> <!--closes globalmap-->
-    </div><!--closes graphiccontainer one-->
+    </div><!--closes graphcontainer one-->
 
-    <div class="graphcontainer" id="two">
-      <div class="directorinfo col-md-6 col-sm-12 col-xs-12">
+    <div class="graphcontainer row" id="two">
+      <div class="directorinfo col-md-6 col-sm-12 col-xs-12" id="graphthree">
         <div class="graphtitle">
           <h2>Successful Directors</h2>
         </div>
         <div class="graphtext">
-          <p>Directors have many goals for their movies. Most want their films to be profitable at the box office and liked by audiences. Some directors have done both. This graph shows the number of movies by director that were on IMDB's top ranked list and Box Office Mojo's highest adjusted domestic grossing list.</p>
+          <p>Most directors want their films to be profitable at the box office and liked by audiences. Some directors have done both. This graph shows the number of movies by director that were on IMDB's top ranked list and Box Office Mojo's highest adjusted domestic grossing list.</p>
         </div>
         <div class="graphcontent" id="directorchart">
-          <script src="chart/Highcharts-5.0.13/code/highcharts.js"></script>
-          <script>
-          Highcharts.theme = {
-             colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
-                '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-             chart: {
-                backgroundColor: {
-                   linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-                   stops: [
-                      [0, '#2a2a2b'],
-                      [1, '#3e3e40']
-                   ]
-                },
-                style: {
-                   fontFamily: '\'Unica One\', sans-serif'
-                },
-                plotBorderColor: '#606063'
-             },
-             title: {
-                style: {
-                   color: '#E0E0E3',
-                   textTransform: 'uppercase',
-                   fontSize: '20px'
-                }
-             },
-             subtitle: {
-                style: {
-                   color: '#E0E0E3',
-                   textTransform: 'uppercase'
-                }
-             },
-             xAxis: {
-                gridLineColor: '#707073',
-                labels: {
-                   style: {
-                      color: '#E0E0E3'
-                   }
-                },
-                lineColor: '#707073',
-                minorGridLineColor: '#505053',
-                tickColor: '#707073',
-                title: {
-                   style: {
-                      color: '#A0A0A3'
 
-                   }
-                }
-             },
-             yAxis: {
-                gridLineColor: '#707073',
-                labels: {
-                   style: {
-                      color: '#E0E0E3'
-                   }
-                },
-                lineColor: '#707073',
-                minorGridLineColor: '#505053',
-                tickColor: '#707073',
-                tickWidth: 1,
-                title: {
-                   style: {
-                      color: '#A0A0A3'
-                   }
-                }
-             },
-             tooltip: {
-                backgroundColor: 'rgba(0, 0, 0, 0.85)',
-                style: {
-                   color: '#F0F0F0'
-                }
-             },
-             plotOptions: {
-                series: {
-                   dataLabels: {
-                      color: '#B0B0B3'
-                   },
-                   marker: {
-                      lineColor: '#333'
-                   }
-                },
-                boxplot: {
-                   fillColor: '#505053'
-                },
-                candlestick: {
-                   lineColor: 'white'
-                },
-                errorbar: {
-                   color: 'white'
-                }
-             },
-             legend: {
-                itemStyle: {
-                   color: '#E0E0E3'
-                },
-                itemHoverStyle: {
-                   color: '#FFF'
-                },
-                itemHiddenStyle: {
-                   color: '#606063'
-                }
-             },
-             credits: {
-                style: {
-                   color: '#666'
-                }
-             },
-             labels: {
-                style: {
-                   color: '#707073'
-                }
-             },
-
-             drilldown: {
-                activeAxisLabelStyle: {
-                   color: '#F0F0F3'
-                },
-                activeDataLabelStyle: {
-                   color: '#F0F0F3'
-                }
-             },
-
-             navigation: {
-                buttonOptions: {
-                   symbolStroke: '#DDDDDD',
-                   theme: {
-                      fill: '#505053'
-                   }
-                }
-             },
-
-             // scroll charts
-             rangeSelector: {
-                buttonTheme: {
-                   fill: '#505053',
-                   stroke: '#000000',
-                   style: {
-                      color: '#CCC'
-                   },
-                   states: {
-                      hover: {
-                         fill: '#707073',
-                         stroke: '#000000',
-                         style: {
-                            color: 'white'
-                         }
-                      },
-                      select: {
-                         fill: '#000003',
-                         stroke: '#000000',
-                         style: {
-                            color: 'white'
-                         }
-                      }
-                   }
-                },
-                inputBoxBorderColor: '#505053',
-                inputStyle: {
-                   backgroundColor: '#333',
-                   color: 'silver'
-                },
-                labelStyle: {
-                   color: 'silver'
-                }
-             },
-
-             navigator: {
-                handles: {
-                   backgroundColor: '#666',
-                   borderColor: '#AAA'
-                },
-                outlineColor: '#CCC',
-                maskFill: 'rgba(255,255,255,0.1)',
-                series: {
-                   color: '#7798BF',
-                   lineColor: '#A6C7ED'
-                },
-                xAxis: {
-                   gridLineColor: '#505053'
-                }
-             },
-
-             scrollbar: {
-                barBackgroundColor: '#808083',
-                barBorderColor: '#808083',
-                buttonArrowColor: '#CCC',
-                buttonBackgroundColor: '#606063',
-                buttonBorderColor: '#606063',
-                rifleColor: '#FFF',
-                trackBackgroundColor: '#404043',
-                trackBorderColor: '#404043'
-             },
-
-             // special colors for some of the
-             legendBackgroundColor: 'rgba(0, 0, 0, 0.5)',
-             background2: '#505053',
-             dataLabelsColor: '#B0B0B3',
-             textColor: '#C0C0C0',
-             contrastTextColor: '#F0F0F3',
-             maskColor: 'rgba(255,255,255,0.3)'
-          };
-
-          // Apply the theme
-          Highcharts.setOptions(Highcharts.theme);
-Highcharts.chart('directorchart', {
-chart: {
-    type: 'bar'
-},
-credits: {
-  enabled: false
-},
-title: {
-    text: 'Directors with Top Grossing and Top Ranked Movies'
-},
-subtitle: {
-    text: '<p> <a href="http://www.imdb.com/chart/top?sort=rk,asc&mode=simple&page=1">IMDB |</a></p> <p> <a href="http://www.boxofficemojo.com/alltime/adjusted.htm?sort=year&order=DESC&adjust_yr=2017&p=.htm">Box Office Mojo</a></p>'
-},
-xAxis: {
-    type: 'category',
-    labels: {
-        rotation: 0,
-        style: {
-            fontSize: '13px',
-            fontFamily: 'Verdana, sans-serif'
-        }
-    }
-},
-yAxis: {
-    min: 0,
-    title: {
-        text: 'Number of Top Grossing and Ranked Movies'
-    }
-},
-legend: {
-    enabled: false
-},
-tooltip: {
-    pointFormat: '<b> {point.name} had {point.y} movies on the IMDB Top 250 and Box Office Mojo Top 200 Adjusted Grossing Movies</b>',
-    headerFormat: ''
-},
-series: [{
-    name: 'Directors',
-    data: [
-        ['Disney/Pixar', 8],
-['Steven Spielberg', 5],
-['George Lucas', 3],
-['Peter Jackson', 3],
-['Alfred Hitchcock', 2],
-['Christopher Nolan', 2],
-['George Roy Hill', 2],
-['Robert Zemeckis', 2]
-    ],
-    dataLabels: {
-        enabled: true,
-        rotation: 0,
-        color: '#FFFFFF',
-        align: 'right',
-        format: '{point.y:.1f}', // one decimal
-        y: 0, // 10 pixels down from the top
-        style: {
-            fontSize: '13px',
-            fontFamily: 'Verdana, sans-serif'
-        }
-    }
-}]
-});
-          </script>
-        </div>
+        </div><!--closes graphcontent-->
       </div> <!--closes directors graph-->
 
-      <div class="studioinfo col-md-6 col-sm-12 col-xs-12">
+      <div class="studioinfo col-md-6 col-sm-12 col-xs-12" id="graphfour">
         <div class="graphtitle">
           <h2>Top Grossing Movies by Studio</h2>
         </div>
         <div class="graphtext">
           <p>Every movie studio wants a movie to be successful at the box office, but some studies have succeeded more than others. This chart shows studios with 2 or more movies on Box Office Mojo's list of the top 200 highest adjusted gross domestic box office movies.</p>
         </div>
-        <div class="graphcontent" id="studiochart">
-          <script src="chart/Highcharts-5.0.13/code/highcharts.js"></script>
-          <script>
-Highcharts.theme = {
-   colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
-      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-   chart: {
-      backgroundColor: {
-         linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-         stops: [
-            [0, '#2a2a2b'],
-            [1, '#3e3e40']
-         ]
-      },
-      style: {
-         fontFamily: '\'Unica One\', sans-serif'
-      },
-      plotBorderColor: '#606063'
-   },
-   title: {
-      style: {
-         color: '#E0E0E3',
-         textTransform: 'uppercase',
-         fontSize: '20px'
-      }
-   },
-   subtitle: {
-      style: {
-         color: '#E0E0E3',
-         textTransform: 'uppercase'
-      }
-   },
-   xAxis: {
-      gridLineColor: '#707073',
-      labels: {
-         style: {
-            color: '#E0E0E3'
-         }
-      },
-      lineColor: '#707073',
-      minorGridLineColor: '#505053',
-      tickColor: '#707073',
-      title: {
-         style: {
-            color: '#A0A0A3'
-
-         }
-      }
-   },
-   yAxis: {
-      gridLineColor: '#707073',
-      labels: {
-         style: {
-            color: '#E0E0E3'
-         }
-      },
-      lineColor: '#707073',
-      minorGridLineColor: '#505053',
-      tickColor: '#707073',
-      tickWidth: 1,
-      title: {
-         style: {
-            color: '#A0A0A3'
-         }
-      }
-   },
-   tooltip: {
-      backgroundColor: 'rgba(0, 0, 0, 0.85)',
-      style: {
-         color: '#F0F0F0'
-      }
-   },
-   plotOptions: {
-      series: {
-         dataLabels: {
-            color: '#B0B0B3'
-         },
-         marker: {
-            lineColor: '#333'
-         }
-      },
-      boxplot: {
-         fillColor: '#505053'
-      },
-      candlestick: {
-         lineColor: 'white'
-      },
-      errorbar: {
-         color: 'white'
-      }
-   },
-   legend: {
-      itemStyle: {
-         color: '#E0E0E3'
-      },
-      itemHoverStyle: {
-         color: '#FFF'
-      },
-      itemHiddenStyle: {
-         color: '#606063'
-      }
-   },
-   credits: {
-      style: {
-         color: '#666'
-      }
-   },
-   labels: {
-      style: {
-         color: '#707073'
-      }
-   },
-
-   drilldown: {
-      activeAxisLabelStyle: {
-         color: '#F0F0F3'
-      },
-      activeDataLabelStyle: {
-         color: '#F0F0F3'
-      }
-   },
-
-   navigation: {
-      buttonOptions: {
-         symbolStroke: '#DDDDDD',
-         theme: {
-            fill: '#505053'
-         }
-      }
-   },
-
-   // scroll charts
-   rangeSelector: {
-      buttonTheme: {
-         fill: '#505053',
-         stroke: '#000000',
-         style: {
-            color: '#CCC'
-         },
-         states: {
-            hover: {
-               fill: '#707073',
-               stroke: '#000000',
-               style: {
-                  color: 'white'
-               }
-            },
-            select: {
-               fill: '#000003',
-               stroke: '#000000',
-               style: {
-                  color: 'white'
-               }
-            }
-         }
-      },
-      inputBoxBorderColor: '#505053',
-      inputStyle: {
-         backgroundColor: '#333',
-         color: 'silver'
-      },
-      labelStyle: {
-         color: 'silver'
-      }
-   },
-
-   navigator: {
-      handles: {
-         backgroundColor: '#666',
-         borderColor: '#AAA'
-      },
-      outlineColor: '#CCC',
-      maskFill: 'rgba(255,255,255,0.1)',
-      series: {
-         color: '#7798BF',
-         lineColor: '#A6C7ED'
-      },
-      xAxis: {
-         gridLineColor: '#505053'
-      }
-   },
-
-   scrollbar: {
-      barBackgroundColor: '#808083',
-      barBorderColor: '#808083',
-      buttonArrowColor: '#CCC',
-      buttonBackgroundColor: '#606063',
-      buttonBorderColor: '#606063',
-      rifleColor: '#FFF',
-      trackBackgroundColor: '#404043',
-      trackBorderColor: '#404043'
-   },
-
-   // special colors for some of the
-   legendBackgroundColor: 'rgba(0, 0, 0, 0.5)',
-   background2: '#505053',
-   dataLabelsColor: '#B0B0B3',
-   textColor: '#C0C0C0',
-   contrastTextColor: '#F0F0F3',
-   maskColor: 'rgba(255,255,255,0.3)'
-};
-
-// Apply the theme
-Highcharts.setOptions(Highcharts.theme);
-
-
-Highcharts.chart('studiochart', {
-chart: {
-type: 'bar'
-},
-credits: {
-  text: '#This number includes movies by Disney and Buena Vista *MGM and United Artists merged in 1982'
-},
-title: {
-text: 'Highest Grossing Movies by Studio'
-},
-subtitle: {
-text: '<a href="http://www.boxofficemojo.com/alltime/adjusted.htm?sort=year&order=DESC&adjust_yr=2017&p=.htm">Box Office Mojo</a>'
-},
-xAxis: {
-type: 'category',
-labels: {
-rotation: 0,
-style: {
-  fontSize: '13px',
-  fontFamily: 'Verdana, sans-serif'
-}
-}
-},
-yAxis: {
-min: 0,
-title: {
-text: 'Number of Top Grossing Movies'
-}
-},
-legend: {
-enabled: false
-},
-tooltip: {
-pointFormat: 'Top Grossing Movies: <b>{point.y:.1f} </b>'
-},
-series: [{
-name: 'Population',
-data: [
-['Disney#', 46],
-['Warner Brothers', 29],
-['Paramount', 25],
-['Fox', 24],
-['Universal', 23],
-['MGM & United Artists*', 13],
-['Columbia', 9],
-['New Line', 5],
-['Paramount & Dream Works', 4],
-['Sony', 4],
-['Lionsgate', 3],
-['Dream Works', 2]
-],
-dataLabels: {
-enabled: true,
-rotation: 0,
-color: '#FFFFFF',
-align: 'right',
-format: '{point.y:.1f}', // one decimal
-y: 0, // 10 pixels down from the top
-style: {
-  fontSize: '13px',
-  fontFamily: 'Verdana, sans-serif'
-}
-}
-}]
-});
-
-
-          </script>
-        </div>
+        <div class="graphcontent" id="studiochart"></div>
       </div> <!--closes studios-->
-    </div><!--closes graphiccontainer two-->
+    </div><!--closes graphcontainer two-->
+
+    <div class="graphcontainer row" id="three">
+      <div class="decaderanking col-md-6 col-sm-12 col-xs-12" id="graphfive">
+        <div class="graphtitle">
+          <h2>Top Ranked Movies by Decade</h2>
+        </div>
+        <div class="graphtext">
+          <p>Movies are timeless. But some decades produced more fan-favorite movies than others. This graph shows how many of IMDB's top 250 ranked movies were released in each decade. The green line shows the median number of top ranked movies for all decades is 23.</p>
+        </div>
+        <div class="graphcontent" id="decaderanking">
+
+        </div><!--closes graphcontent-->
+      </div> <!--closes decaderanking-->
+
+      <div class="starwars col-md-6 col-sm-12 col-xs-12" id="graphsix">
+        <div class="graphtitle">
+          <h2>Star Wars by the Numbers</h2>
+        </div>
+        <div class="graphtext">
+          <p>Star Wars has captivated the imaginations of generations of fans. But some Star Wars movies were received better than others. And each film expereienced different levels of box office success. This graph compares the adjusted gross income and ranking of the eight Star Wars movies.</p>
+        </div>
+        <div class="graphcontent" id="starwars">
+
+        </div>
+      </div> <!--closes star wars-->
+    </div><!--closes graphcontainer three-->
 
 
     <footer>
@@ -678,5 +165,705 @@ style: {
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="chart/Highcharts-5.0.13/code/highcharts.js"></script>
+    <script>
+    Highcharts.theme = {
+       colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
+          '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+       chart: {
+          backgroundColor: {
+             linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+             stops: [
+                [0, '#2a2a2b'],
+                [1, '#3e3e40']
+             ]
+          },
+          style: {
+             fontFamily: '\'Unica One\', sans-serif'
+          },
+          plotBorderColor: '#606063'
+       },
+       title: {
+          style: {
+             color: '#E0E0E3',
+             textTransform: 'uppercase',
+             fontSize: '20px'
+          }
+       },
+       subtitle: {
+          style: {
+             color: '#E0E0E3',
+             textTransform: 'uppercase'
+          }
+       },
+       xAxis: {
+          gridLineColor: '#707073',
+          labels: {
+             style: {
+                color: '#E0E0E3'
+             }
+          },
+          lineColor: '#707073',
+          minorGridLineColor: '#505053',
+          tickColor: '#707073',
+          title: {
+             style: {
+                color: '#A0A0A3'
+
+             }
+          }
+       },
+       yAxis: {
+          gridLineColor: '#707073',
+          labels: {
+             style: {
+                color: '#E0E0E3'
+             }
+          },
+          lineColor: '#707073',
+          minorGridLineColor: '#505053',
+          tickColor: '#707073',
+          tickWidth: 1,
+          title: {
+             style: {
+                color: '#A0A0A3'
+             }
+          }
+       },
+       tooltip: {
+          backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          style: {
+             color: '#F0F0F0'
+          }
+       },
+       plotOptions: {
+          series: {
+             dataLabels: {
+                color: '#B0B0B3'
+             },
+             marker: {
+                lineColor: '#333'
+             }
+          },
+          boxplot: {
+             fillColor: '#505053'
+          },
+          candlestick: {
+             lineColor: 'white'
+          },
+          errorbar: {
+             color: 'white'
+          }
+       },
+       legend: {
+          itemStyle: {
+             color: '#E0E0E3'
+          },
+          itemHoverStyle: {
+             color: '#FFF'
+          },
+          itemHiddenStyle: {
+             color: '#606063'
+          }
+       },
+       credits: {
+          style: {
+             color: '#666'
+          }
+       },
+       labels: {
+          style: {
+             color: '#707073'
+          }
+       },
+
+       drilldown: {
+          activeAxisLabelStyle: {
+             color: '#F0F0F3'
+          },
+          activeDataLabelStyle: {
+             color: '#F0F0F3'
+          }
+       },
+
+       navigation: {
+          buttonOptions: {
+             symbolStroke: '#DDDDDD',
+             theme: {
+                fill: '#505053'
+             }
+          }
+       },
+
+       // scroll charts
+       rangeSelector: {
+          buttonTheme: {
+             fill: '#505053',
+             stroke: '#000000',
+             style: {
+                color: '#CCC'
+             },
+             states: {
+                hover: {
+                   fill: '#707073',
+                   stroke: '#000000',
+                   style: {
+                      color: 'white'
+                   }
+                },
+                select: {
+                   fill: '#000003',
+                   stroke: '#000000',
+                   style: {
+                      color: 'white'
+                   }
+                }
+             }
+          },
+          inputBoxBorderColor: '#505053',
+          inputStyle: {
+             backgroundColor: '#333',
+             color: 'silver'
+          },
+          labelStyle: {
+             color: 'silver'
+          }
+       },
+
+       navigator: {
+          handles: {
+             backgroundColor: '#666',
+             borderColor: '#AAA'
+          },
+          outlineColor: '#CCC',
+          maskFill: 'rgba(255,255,255,0.1)',
+          series: {
+             color: '#7798BF',
+             lineColor: '#A6C7ED'
+          },
+          xAxis: {
+             gridLineColor: '#505053'
+          }
+       },
+
+       scrollbar: {
+          barBackgroundColor: '#808083',
+          barBorderColor: '#808083',
+          buttonArrowColor: '#CCC',
+          buttonBackgroundColor: '#606063',
+          buttonBorderColor: '#606063',
+          rifleColor: '#FFF',
+          trackBackgroundColor: '#404043',
+          trackBorderColor: '#404043'
+       },
+
+       // special colors for some of the
+       legendBackgroundColor: 'rgba(0, 0, 0, 0.5)',
+       background2: '#505053',
+       dataLabelsColor: '#B0B0B3',
+       textColor: '#C0C0C0',
+       contrastTextColor: '#F0F0F3',
+       maskColor: 'rgba(255,255,255,0.3)'
+    };
+
+    // Apply the theme
+    Highcharts.setOptions(Highcharts.theme);
+    Highcharts.chart('directorchart', {
+    chart: {
+        type: 'bar'
+    },
+    credits: {
+      enabled: false
+    },
+    title: {
+        text: 'Directors with Top Grossing and Top Ranked Movies'
+    },
+    subtitle: {
+        text: '<p> <a href="http://www.imdb.com/chart/top?sort=rk,asc&mode=simple&page=1">IMDB |</a></p> <p> <a href="http://www.boxofficemojo.com/alltime/adjusted.htm?sort=year&order=DESC&adjust_yr=2017&p=.htm">Box Office Mojo</a></p>'
+    },
+    xAxis: {
+        type: 'category',
+        labels: {
+            rotation: 0,
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+            }
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Number of Top Grossing and Ranked Movies'
+        }
+    },
+    legend: {
+        enabled: false
+    },
+    tooltip: {
+        pointFormat: '<b> {point.name} had {point.y} movies on the IMDB Top 250 and Box Office Mojo Top 200 Adjusted Grossing Movies</b>',
+        headerFormat: ''
+    },
+    series: [{
+        name: 'Directors',
+        data: [
+            ['Disney/Pixar', 8],
+    ['Steven Spielberg', 5],
+    ['George Lucas', 3],
+    ['Peter Jackson', 3],
+    ['Alfred Hitchcock', 2],
+    ['Christopher Nolan', 2],
+    ['George Roy Hill', 2],
+    ['Robert Zemeckis', 2]
+        ],
+        dataLabels: {
+            enabled: true,
+            rotation: 0,
+            color: '#FFFFFF',
+            align: 'right',
+            format: '{point.y}', // one decimal
+            y: 0, // 10 pixels down from the top
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+            }
+        }
+    }]
+    });
+    </script>
+    <script>
+      Highcharts.theme = {
+         colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
+            '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+         chart: {
+            backgroundColor: {
+               linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+               stops: [
+                  [0, '#2a2a2b'],
+                  [1, '#3e3e40']
+               ]
+            },
+            style: {
+               fontFamily: '\'Unica One\', sans-serif'
+            },
+            plotBorderColor: '#606063'
+         },
+         title: {
+            style: {
+               color: '#E0E0E3',
+               textTransform: 'uppercase',
+               fontSize: '20px'
+            }
+         },
+         subtitle: {
+            style: {
+               color: '#E0E0E3',
+               textTransform: 'uppercase'
+            }
+         },
+         xAxis: {
+            gridLineColor: '#707073',
+            labels: {
+               style: {
+                  color: '#E0E0E3'
+               }
+            },
+            lineColor: '#707073',
+            minorGridLineColor: '#505053',
+            tickColor: '#707073',
+            title: {
+               style: {
+                  color: '#A0A0A3'
+
+               }
+            }
+         },
+         yAxis: {
+            gridLineColor: '#707073',
+            labels: {
+               style: {
+                  color: '#E0E0E3'
+               }
+            },
+            lineColor: '#707073',
+            minorGridLineColor: '#505053',
+            tickColor: '#707073',
+            tickWidth: 1,
+            title: {
+               style: {
+                  color: '#A0A0A3'
+               }
+            }
+         },
+         tooltip: {
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+            style: {
+               color: '#F0F0F0'
+            }
+         },
+         plotOptions: {
+            series: {
+               dataLabels: {
+                  color: '#B0B0B3'
+               },
+               marker: {
+                  lineColor: '#333'
+               }
+            },
+            boxplot: {
+               fillColor: '#505053'
+            },
+            candlestick: {
+               lineColor: 'white'
+            },
+            errorbar: {
+               color: 'white'
+            }
+         },
+         legend: {
+            itemStyle: {
+               color: '#E0E0E3'
+            },
+            itemHoverStyle: {
+               color: '#FFF'
+            },
+            itemHiddenStyle: {
+               color: '#606063'
+            }
+         },
+         credits: {
+            style: {
+               color: '#666'
+            }
+         },
+         labels: {
+            style: {
+               color: '#707073'
+            }
+         },
+
+         drilldown: {
+            activeAxisLabelStyle: {
+               color: '#F0F0F3'
+            },
+            activeDataLabelStyle: {
+               color: '#F0F0F3'
+            }
+         },
+
+         navigation: {
+            buttonOptions: {
+               symbolStroke: '#DDDDDD',
+               theme: {
+                  fill: '#505053'
+               }
+            }
+         },
+
+         // scroll charts
+         rangeSelector: {
+            buttonTheme: {
+               fill: '#505053',
+               stroke: '#000000',
+               style: {
+                  color: '#CCC'
+               },
+               states: {
+                  hover: {
+                     fill: '#707073',
+                     stroke: '#000000',
+                     style: {
+                        color: 'white'
+                     }
+                  },
+                  select: {
+                     fill: '#000003',
+                     stroke: '#000000',
+                     style: {
+                        color: 'white'
+                     }
+                  }
+               }
+            },
+            inputBoxBorderColor: '#505053',
+            inputStyle: {
+               backgroundColor: '#333',
+               color: 'silver'
+            },
+            labelStyle: {
+               color: 'silver'
+            }
+         },
+
+         navigator: {
+            handles: {
+               backgroundColor: '#666',
+               borderColor: '#AAA'
+            },
+            outlineColor: '#CCC',
+            maskFill: 'rgba(255,255,255,0.1)',
+            series: {
+               color: '#7798BF',
+               lineColor: '#A6C7ED'
+            },
+            xAxis: {
+               gridLineColor: '#505053'
+            }
+         },
+
+         scrollbar: {
+            barBackgroundColor: '#808083',
+            barBorderColor: '#808083',
+            buttonArrowColor: '#CCC',
+            buttonBackgroundColor: '#606063',
+            buttonBorderColor: '#606063',
+            rifleColor: '#FFF',
+            trackBackgroundColor: '#404043',
+            trackBorderColor: '#404043'
+         },
+
+         // special colors for some of the
+         legendBackgroundColor: 'rgba(0, 0, 0, 0.5)',
+         background2: '#505053',
+         dataLabelsColor: '#B0B0B3',
+         textColor: '#C0C0C0',
+         contrastTextColor: '#F0F0F3',
+         maskColor: 'rgba(255,255,255,0.3)'
+      };
+
+      // Apply the theme
+      Highcharts.setOptions(Highcharts.theme);
+
+
+      Highcharts.chart('studiochart', {
+      chart: {
+      type: 'bar'
+      },
+      credits: {
+        text: '#This number includes movies by Disney and Buena Vista *MGM and United Artists merged in 1982'
+      },
+      title: {
+      text: 'Highest Grossing Movies by Studio'
+      },
+      subtitle: {
+      text: '<a href="http://www.boxofficemojo.com/alltime/adjusted.htm?sort=year&order=DESC&adjust_yr=2017&p=.htm">Box Office Mojo</a>'
+      },
+      xAxis: {
+      type: 'category',
+      labels: {
+      rotation: 0,
+      style: {
+        fontSize: '13px',
+        fontFamily: 'Verdana, sans-serif'
+      }
+      }
+      },
+      yAxis: {
+      min: 0,
+      title: {
+      text: 'Number of Top Grossing Movies'
+      }
+      },
+      legend: {
+      enabled: false
+      },
+      tooltip: {
+      pointFormat: 'Top Grossing Movies: <b>{point.y} </b>'
+      },
+      series: [{
+      name: 'Population',
+      data: [
+      ['Disney#', 46],
+      ['Warner Brothers', 29],
+      ['Paramount', 25],
+      ['Fox', 24],
+      ['Universal', 23],
+      ['MGM & United Artists*', 13],
+      ['Columbia', 9],
+      ['New Line', 5],
+      ['Paramount & Dream Works', 4],
+      ['Sony', 4],
+      ['Lionsgate', 3],
+      ['Dream Works', 2]
+      ],
+      dataLabels: {
+      enabled: true,
+      rotation: 0,
+      color: '#FFFFFF',
+      align: 'right',
+      format: '{point.y}', // one decimal
+      y: 0, // 10 pixels down from the top
+      style: {
+        fontSize: '13px',
+        fontFamily: 'Verdana, sans-serif'
+      }
+      }
+      }]
+      });
+
+      Highcharts.chart('decaderanking', {
+    chart: {
+        type: 'column'
+    },
+    credits: {
+      enabled: false
+    },
+    title: {
+        text: 'IMDB\'s Top 250 Movies by Decade'
+    },
+    subtitle: {
+        text: '<a href="http://www.imdb.com/chart/top?sort=rk,asc&mode=simple&page=1">Analysis of IMDB Top 250 Movies</a>'
+    },
+    xAxis: {
+        type: 'category',
+        labels: {
+            rotation: 0,
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+            }
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Number of Movies in IMDB\'s Top Ranked 250 Movies'
+        },
+        plotLines: [{
+          value: 23,
+          color: '#90ee7e',
+          dashStyle: 'solid',
+          width: 2,
+          zIndex: 5,
+          label: {
+            text: 'Median Number of Movies',
+            style: {
+              color: 'white',
+              fontWeight: 'bold'
+            }
+          }
+        }]
+    },
+    legend: {
+        enabled: false
+    },
+    tooltip: {
+        pointFormat: 'There were <b>{point.y} movies</b> in the IMDB top 250 in the {point.name}'
+    },
+    series: [{
+        name: 'Population',
+        data: [
+            ['1920\'s', 6],
+            ['1930\'s', 7],
+            ['1940\'s', 12],
+            ['1950\'s', 25],
+            ['1960\'s', 18],
+            ['1970\'s', 21],
+            ['1980\'s', 28],
+            ['1990\'s', 42],
+            ['2000\'s', 53],
+            ['2010\'s', 38]
+        ],
+        dataLabels: {
+            enabled: true,
+            rotation: 0,
+            color: '#FFFFFF',
+            align: 'center',
+            format: '{point.y}', // one decimal
+            y: 0, // 10 pixels down from the top
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+            }
+        }
+    }]
+});
+
+Highcharts.chart('starwars', {
+    chart: {
+        type: 'scatter',
+        zoomType: 'xy'
+    },
+    title: {
+        text: 'Star Wars IMDB Rating v. Gross Adjusted Box Office'
+    },
+    subtitle: {
+        text: '<a href="http://www.imdb.com/chart/top?sort=rk,asc&mode=simple&page=1">IMDB &</a> <a href="http://www.boxofficemojo.com/alltime/adjusted.htm?sort=year&order=DESC&adjust_yr=2017&p=.htm"> Box Office Mojo</a>'
+    },
+    xAxis: {
+        title: {
+            enabled: true,
+            text: 'IMDB Rating'
+        },
+        startOnTick: true,
+        endOnTick: true,
+        showLastLabel: true
+    },
+    yAxis: {
+        title: {
+            text: 'Domestic Gross Adjusted Box Office'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        verticalAlign: 'top',
+        x: 100,
+        y: 70,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+        borderWidth: 1
+    },
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            },
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '<br>IMDB Rating: {point.x}</br> <br> Adjusted Gross Domestic Box Office: ${point.y}</br>'
+            }
+        }
+    },
+    series: [{
+        name: 'Original Trilogy',
+        color: '#A9FF96',
+        data: [{ x: 8.7, y: 701085300, name: ' Star Wars: Episode V - The Empire Strikes Back', dataLabels: { enabled: true, format: ' Star Wars: Episode V - The Empire Strikes Back' }},
+{ x: 8.6, y: 1583483200, name: ' Star Wars: Episode IV - A New Hope', dataLabels: { enabled: true, format: ' Star Wars: Episode IV - A New Hope' }},
+{ x: 8.3, y: 719942300, name: ' Star Wars: Episode VI - Return of the Jedi', dataLabels: { enabled: true, format: ' Star Wars: Episode VI - Return of the Jedi' }}]
+
+    }, {
+        name: 'Prequels',
+        color: '#95CEFF',
+        data: [{ x: 6.5, y: 802874300, name: ' Star Wars: Episode I - The Phantom Menace', dataLabels: { enabled: true, format: ' Star Wars: Episode I - The Phantom Menace' }},
+{ x: 6.6, y: 475334700, name: ' Star Wars: Episode II - Attack of the Clones', dataLabels: { enabled: true, format: ' Star Wars: Episode II - Attack of the Clones' }},
+{ x: 7.6, y: 527395500, name: ' Star Wars: Episode III - Revenge of the Sith', dataLabels: { enabled: true, format: ' Star Wars: Episode III - Revenge of the Sith' }}]
+
+    }, {
+        name: 'New Generation',
+        color: '#FF7474',
+        data: [{ x: 8, y: 961143200, name: ' Star Wars: The Force Awakens', dataLabels: { enabled: true, format: ' Star Wars: The Force Awakens' }},
+{ x: 7.9, y: 537326000, name: ' Rogue One: A Star Wars Story', dataLabels: { enabled: true, format: ' Rogue One: A Star Wars Story' }}]
+
+
+    }]
+});
+
+
+
+    </script>
   </body>
 </html>
