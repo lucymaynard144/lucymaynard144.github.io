@@ -106,7 +106,7 @@
           <h2>Successful Directors</h2>
         </div>
         <div class="graphtext">
-          <p>Most directors want their films to be profitable at the box office and liked by audiences. Some directors have done both. This graph shows the number of movies by director that were on IMDB's top ranked list and Box Office Mojo's highest adjusted domestic grossing list.</p>
+          <p>Most directors want their films to be profitable at the box office and liked by audiences. Some did. This graph shows the number of movies by director on IMDB's top ranked list and Box Office Mojo's highest adjusted grossing movies list.</p>
         </div>
         <div class="graphcontent" id="directorchart">
 
@@ -118,9 +118,13 @@
           <h2>Top Grossing Movies by Studio</h2>
         </div>
         <div class="graphtext">
-          <p>Every movie studio wants a movie to be successful at the box office, but some studies have succeeded more than others. This chart shows studios with 2 or more movies on Box Office Mojo's list of the top 200 highest adjusted gross domestic box office movies.</p>
+          <p>Movie studios want their movies to be successful at the box office, but some studies have succeeded more than others. This graph shows the studios with 2 or more movies on Box Office Mojo's list of the top 200 adjusted domestic grossing movies.</p>
         </div>
         <div class="graphcontent" id="studiochart"></div>
+        <div class="sourcelinks">
+          <a>#This number includes movies by Disney and Buena Vista |</a>
+          <a>*MGM and United Artists merged in 1982</a>
+        </div><!--closes sourcelinks-->
       </div> <!--closes studios-->
     </div><!--closes graphcontainer two-->
 
@@ -130,7 +134,7 @@
           <h2>Top Ranked Movies by Decade</h2>
         </div>
         <div class="graphtext">
-          <p>Movies are timeless. But some decades produced more fan-favorite movies than others. This graph shows how many of IMDB's top 250 ranked movies were released in each decade. The green line shows the median number of top ranked movies for all decades is 23.</p>
+          <p>Movies are timeless. But some decades produced more fan-favorite films than others. This graph shows how many of IMDB's top 250 ranked movies came out in each decade. The green line shows the median number of top ranked films for each decade.</p>
         </div>
         <div class="graphcontent" id="decaderanking">
 
@@ -142,7 +146,7 @@
           <h2>Star Wars by the Numbers</h2>
         </div>
         <div class="graphtext">
-          <p>Star Wars has captivated the imaginations of generations of fans. But some Star Wars movies were received better than others. And each film expereienced different levels of box office success. This graph compares the adjusted gross income and ranking of the eight Star Wars movies.</p>
+          <p>Star Wars has captivated the imaginations of generations of fans. But each film experienced different levels of fan acceptance and box office success. This graph compares the domestic adjusted gross income and IMDB ranking of the Star Wars films.</p>
         </div>
         <div class="graphcontent" id="starwars">
 
@@ -640,7 +644,7 @@
       type: 'bar'
       },
       credits: {
-        text: '#This number includes movies by Disney and Buena Vista *MGM and United Artists merged in 1982'
+        enabled: false,
       },
       title: {
       text: 'Highest Grossing Movies by Studio'
@@ -748,7 +752,7 @@
         enabled: false
     },
     tooltip: {
-        pointFormat: 'There were <b>{point.y} movies</b> in the IMDB top 250 in the {point.name}'
+        pointFormat: 'There were {point.y} movies in the IMDB top 250 in the {point.name}'
     },
     series: [{
         name: 'Population',
@@ -784,6 +788,9 @@ Highcharts.chart('starwars', {
         type: 'scatter',
         zoomType: 'xy'
     },
+    credits: {
+      enabled: false
+    },
     title: {
         text: 'Star Wars IMDB Rating v. Gross Adjusted Box Office'
     },
@@ -805,14 +812,7 @@ Highcharts.chart('starwars', {
         }
     },
     legend: {
-        layout: 'vertical',
-        align: 'left',
-        verticalAlign: 'top',
-        x: 100,
-        y: 70,
-        floating: true,
-        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
-        borderWidth: 1
+        itemDistance : 50
     },
     plotOptions: {
         scatter: {
@@ -834,29 +834,32 @@ Highcharts.chart('starwars', {
             },
             tooltip: {
                 headerFormat: '',
-                pointFormat: '<br>IMDB Rating: {point.x}</br> <br> Adjusted Gross Domestic Box Office: ${point.y}</br>'
+                pointFormat: '<br> {point.name}</br> <br>IMDB Rating: {point.x}</br> <br> Adjusted Gross Domestic Box Office: ${point.y}</br>'
             }
         }
     },
     series: [{
         name: 'Original Trilogy',
         color: '#A9FF96',
-        data: [{ x: 8.7, y: 701085300, name: ' Star Wars: Episode V - The Empire Strikes Back', dataLabels: { enabled: true, format: ' Star Wars: Episode V - The Empire Strikes Back' }},
-{ x: 8.6, y: 1583483200, name: ' Star Wars: Episode IV - A New Hope', dataLabels: { enabled: true, format: ' Star Wars: Episode IV - A New Hope' }},
-{ x: 8.3, y: 719942300, name: ' Star Wars: Episode VI - Return of the Jedi', dataLabels: { enabled: true, format: ' Star Wars: Episode VI - Return of the Jedi' }}]
+        dataLabels: {
+          allowOverlap: true
+        },
+        data: [{ x: 8.7, y: 701085300, name: ' Star Wars: Episode V - The Empire Strikes Back', dataLabels: { enabled: true, format: ' V - Empire', allowOverlap: true}},
+{ x: 8.6, y: 1583483200, name: ' Star Wars: Episode IV - A New Hope', dataLabels: { enabled: true, format: ' IV - New Hope' }},
+{ x: 8.3, y: 719942300, name: ' Star Wars: Episode VI - Return of the Jedi', dataLabels: { enabled: true, format: ' VI - Jedi', allowOverlap: true }}]
 
     }, {
         name: 'Prequels',
         color: '#95CEFF',
-        data: [{ x: 6.5, y: 802874300, name: ' Star Wars: Episode I - The Phantom Menace', dataLabels: { enabled: true, format: ' Star Wars: Episode I - The Phantom Menace' }},
-{ x: 6.6, y: 475334700, name: ' Star Wars: Episode II - Attack of the Clones', dataLabels: { enabled: true, format: ' Star Wars: Episode II - Attack of the Clones' }},
-{ x: 7.6, y: 527395500, name: ' Star Wars: Episode III - Revenge of the Sith', dataLabels: { enabled: true, format: ' Star Wars: Episode III - Revenge of the Sith' }}]
+        data: [{ x: 6.5, y: 802874300, name: ' Star Wars: Episode I - The Phantom Menace', dataLabels: { enabled: true, format: 'I - Phantom Menace' }},
+{ x: 6.6, y: 475334700, name: ' Star Wars: Episode II - Attack of the Clones', dataLabels: { enabled: true, format: ' II - Clones' }},
+{ x: 7.6, y: 527395500, name: ' Star Wars: Episode III - Revenge of the Sith', dataLabels: { enabled: true, format: ' III - <br>Sith' }}]
 
     }, {
         name: 'New Generation',
         color: '#FF7474',
-        data: [{ x: 8, y: 961143200, name: ' Star Wars: The Force Awakens', dataLabels: { enabled: true, format: ' Star Wars: The Force Awakens' }},
-{ x: 7.9, y: 537326000, name: ' Rogue One: A Star Wars Story', dataLabels: { enabled: true, format: ' Rogue One: A Star Wars Story' }}]
+        data: [{ x: 8, y: 961143200, name: ' Star Wars: The Force Awakens', dataLabels: { enabled: true, format: ' VII - Awakens' }},
+{ x: 7.9, y: 537326000, name: ' Rogue One: A Star Wars Story', dataLabels: { enabled: true, format: ' Rogue <br>One' }}]
 
 
     }]

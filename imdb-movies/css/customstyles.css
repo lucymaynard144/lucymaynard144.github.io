@@ -137,25 +137,69 @@ footer {
 
 /*extra small devices, phones*/
 @media only screen and (max-width: 767px) {
-  .timelineinfo {
+  .subtitle {
+    margin: 0 40px 0 40px;
+  }
 
+  #graphtwo {
+    margin-top: 30px;
+  }
+
+  #graphfour {
+    margin-top: 30px;
+  }
+
+  #graphsix {
+    margin-top: 30px;
+  }
+
+  .graphtext {
+    margin: 0 30px 0 30px;
   }
 }
 
 /*small devices, tablets*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .subtitle {
+    margin: 0 50px 0 50px;
+  }
 
+  #graphtwo {
+    margin-top: 30px;
+  }
+
+  #graphfour {
+    margin-top: 30px;
+  }
+
+  #graphsix {
+    margin-top: 30px;
+  }
 }
 
 /*medium devices, desktops*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .graphtext {
+    margin: 10px 0 10px 0;
+    padding: 10px 20px 0 20px;
+  }
+
+  .subtitle {
+    margin: 0 150px 0 150px;
+  }
+
+  .graphcontainer #one {
+    padding-top: 30px;
+  }
+
 
 }
 
 /*large devices, desktops*/
 @media only screen and (min-width: 1200px) {
   .graphtext {
-    margin: 0 60px 0 60px;
+    margin: 10px 0 10px 0;
+    padding: 10px 20px 0 20px;
   }
 
   .topsection h1 {
