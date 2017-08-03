@@ -73,6 +73,10 @@ body {
   border: 2px inset;
 }
 
+#buttontwo {
+  display: none;
+}
+
 .legendbox {
   width: 200px;
   height: 200px;
