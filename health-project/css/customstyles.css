@@ -59,6 +59,11 @@ body {
 
 }
 
+#picture {
+  height: 400px;
+  width: 100%;
+}
+
 #columnrange {
   height: 400px;
   width: 100%;
@@ -69,7 +74,12 @@ body {
   width: 100%;
 }
 
-#scatterplot {
+#columnchart {
+  height: 400px;
+  width: 100%;
+}
+
+#fusionmap {
   height: 400px;
   width: 100%;
 }
@@ -79,7 +89,40 @@ body {
   width: 100%;
 }
 
-#fusionmap {
-  height: 400px;
-  width: 100%;
+#firsttrimester {
+  height: 200px;
+  width: 79%;
+  background-color: #95CEFF;
+  padding-left: 0;
+  position: relative;
+  float: left;
+  top: 100px;
+}
+
+#secondtrimester {
+  height: 200px;
+  width: 19%;
+  background-color: #A9FF96;
+  position: relative;
+  float: left;
+  top: 100px;
+}
+
+#thirdtrimester {
+  height: 200px;
+  width: 1%;
+  background-color: #5C5C61;
+  position: relative;
+  float: left;
+  top: 100px;
+
+}
+
+#nocare {
+  height: 200px;
+  width: 1%;
+  background-color: #FFBC75;
+  position: relative;
+  float: left;
+  top: 100px;
 }

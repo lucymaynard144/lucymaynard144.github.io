@@ -64,10 +64,10 @@
       </div>
 
       <div class="col-sm-7 graphblock">
-          <div class="col-sm-12 graphcontent">
-
+          <div class="col-sm-12 graphcontent" id="picture">
+            <a href="http://pregnancyaidcenter.org/contact/" target="_blank"><img src="https://goo.gl/images/BM44n4"/></a>
           </div>
-        </div>
+      </div>
     </div><!--closes graphcontainer one-->
 
     <div class="row graphcontainer" id="two">
@@ -77,7 +77,7 @@
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>The Maryland Pregnancy Risk Assessment onitoring System (PRAMS) conducted a survey in 2013 of 1,239 women. The study found that 20.5 percent of these women were uninsured before pregnancy. A majority of the surveyed women got insurance during their pregnancy and then went back to being uninsured postpartum. This chart shows the percentage range (accounting for the statistical margin of error) of women's insurance status before, during and after pregnancy.</p>
+          <p>A survey conducted by the Maryland Pregnancy Risk Assessment Monitoring System (PRAMS) found 20.5 percent of women were uninsured before pregnancy. A majority of the surveyed women got insurance during their pregnancy and then went back to being uninsured postpartum. This chart shows the percentage range for women's insurance status before, during and after pregnancy.</p>
         </div>
       </div>
 
@@ -94,7 +94,7 @@
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>The Maryland Department of Health defines early prenatal care as receiving care within the first trimester of pregnancy and reports that women who begin prenatal care in the first three months are less likely to have pregnancy complications and more likely to have healthy babies. But access to this vital health care service is not equal between white, black and hispanic infants. From 2012-2014, a black infant was 24 percent less likely and a hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
+          <p>Women who begin prenatal care in the first trimester are more likely to have healthy babies, the CDC reports. But access to early prenatal care is not equal between white, black and hispanic infants. From 2012-2014, a black infant was 24 percent less likely and a hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
         </div>
       </div>
 
@@ -107,16 +107,16 @@
     <div class="row graphcontainer" id="four">
       <div class="col-sm-3 col-sm-offset-1 textblock">
         <div class="col-sm-12 graphtitle">
-          <h2>Low Birthweight v. Late or No Prenatal Care</h2>
+          <h2>What Keeps Women from Initiating Early Prenatal Care</h2>
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>Pregnant women who receive late (third trimester) or no prenatal care are three times more likely to give birth to a low birthweight baby, according to the March of Dimes Perinatal Data Center. The CDC uses the term low birthweight to describe babies who are born weighing less than 2500 grams, or 5 pounds 8 ounces. This chart compares the percentage of low birthweight births to the percentage of women who received late or no prenatal care in each Maryland county.</p>
+          <p>Insurance is not the only factor that determines whether women initiate prenatal care. This chart shows the survey results from a poll conducted by the Maryland Pregnancy Risk Assessment Monitoring system of 4,548 Maryland mothers who gave birth between January 1, 2009 and December 31, 2011. The women surveyed could select multiple responses for why they would not get early prenatal care.</p>
         </div>
       </div>
 
       <div class="col-sm-7 graphblock">
-          <div class="col-sm-12 graphcontent" id="scatterplot">
+          <div class="col-sm-12 graphcontent" id="columnchart">
           </div>
       </div>
     </div> <!--closes graphcontainer four-->
@@ -124,16 +124,16 @@
     <div class="row graphcontainer" id="five">
       <div class="col-sm-3 col-sm-offset-1 textblock">
         <div class="col-sm-12 graphtitle">
-          <h2>The Race for Early Prenatal Care</h2>
+          <h2>Low Birthweight in Maryland Counties</h2>
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>Access to early prenatal care is not equal between white, black and hispanic infants. From 2012-2014, a black infant was 24 percent less likely and a hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
+          <p>The CDC uses the term low birthweight to describe babies who are born weighing less than 5 pounds 8 ounces. Infants with low birthweights have a higher risk of respiratory distress, heart problems, anemia and sleep apnea, the CDC reports. This map shows the percentage of low birthweight births in each Maryland county in 2012.</p>
         </div>
       </div>
 
       <div class="col-sm-7 graphblock">
-          <div class="col-sm-12 graphcontent" id="stackedbar">
+          <div class="col-sm-12 graphcontent" id="fusionmap">
           </div>
       </div>
     </div> <!--closes graphcontainer five-->
@@ -141,16 +141,20 @@
     <div class="row graphcontainer" id="six">
       <div class="col-sm-3 col-sm-offset-1 textblock">
         <div class="col-sm-12 graphtitle">
-          <h2>The Race for Early Prenatal Care</h2>
+          <h2>When Women are Initiating Prenatal Care</h2>
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>Access to early prenatal care is not equal between white, black and hispanic infants. From 2012-2014, a black infant was 24 percent less likely and a hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
+          <p>Pregnant women who begin prenatal care in the first trimester are less likely to have pregnancy complications and more likely to have healthy babies, the Maryland Department of Health reports. But prenatal care at all stages of pregnancy is important. This chart shows the percentage of women who initiated prenatal care at each stage of pregnancy.</p>
         </div>
       </div>
 
       <div class="col-sm-7 graphblock">
-          <div class="col-sm-12 graphcontent" id="fusionmap">
+          <div class="col-sm-12 graphcontent" id="stackedbar">
+            <div id="firsttrimester"></div>
+            <div id="secondtrimester"></div>
+            <div id="thirdtrimester"></div>
+            <div id="nocare"></div>
           </div>
       </div>
     </div> <!--closes graphcontainer six-->
@@ -167,9 +171,74 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="chart/Highcharts-5.0.13/code/highcharts.js"></script>
+    <script src="chart/Highcharts-5.0.13/code/highcharts-more.js"></script>
 
     <script>
     Highcharts.chart('columnrange', {
+
+    chart: {
+        type: 'columnrange',
+        inverted: true
+    },
+
+    title: {
+        text: 'Temperature variation by month'
+    },
+
+    subtitle: {
+        text: 'Observed in Vik i Sogn, Norway'
+    },
+
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+
+    yAxis: {
+        title: {
+            text: 'Temperature ( °C )'
+        }
+    },
+
+    tooltip: {
+        valueSuffix: '°C'
+    },
+
+    plotOptions: {
+        columnrange: {
+            dataLabels: {
+                enabled: true,
+                formatter: function () {
+                    return this.y + '°C';
+                }
+            }
+        }
+    },
+
+    legend: {
+        enabled: false
+    },
+
+    series: [{
+        name: 'Temperatures',
+        data: [
+            [-9.7, 9.4],
+            [-8.7, 6.5],
+            [-3.5, 9.4],
+            [-1.4, 19.9],
+            [0.0, 22.6],
+            [2.9, 29.5],
+            [9.2, 30.7],
+            [7.3, 26.5],
+            [4.4, 18.0],
+            [-3.1, 11.4],
+            [-5.2, 10.4],
+            [-13.5, 9.8]
+        ]
+    }]
+
+    });
+
+    Highcharts.chart('barchart', {
     chart: {
         type: 'column'
     },
@@ -194,6 +263,11 @@
         title: {
             text: 'Population (millions)'
         }
+    },
+    plotOptions: {
+      series: {
+        color:'#5C5C61'
+      }
     },
     legend: {
         enabled: false
@@ -239,6 +313,82 @@
           }
         }]
       });
+
+      Highcharts.chart('columnchart', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'World\'s largest cities per 2014'
+    },
+    subtitle: {
+        text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+    },
+    xAxis: {
+        type: 'category',
+        labels: {
+            rotation: -45,
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+            }
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Population (millions)'
+        }
+    },
+    plotOptions: {
+      series: {
+        color:'#FFBC75'
+      }
+    },
+    legend: {
+        enabled: false
+    },
+    tooltip: {
+        pointFormat: 'Population in 2008: <b>{point.y:.1f} millions</b>'
+    },
+    series: [{
+        name: 'Population',
+        data: [
+            ['Shanghai', 23.7],
+            ['Lagos', 16.1],
+            ['Istanbul', 14.2],
+            ['Karachi', 14.0],
+            ['Mumbai', 12.5],
+            ['Moscow', 12.1],
+            ['São Paulo', 11.8],
+            ['Beijing', 11.7],
+            ['Guangzhou', 11.1],
+            ['Delhi', 11.1],
+            ['Shenzhen', 10.5],
+            ['Seoul', 10.4],
+            ['Jakarta', 10.0],
+            ['Kinshasa', 9.3],
+            ['Tianjin', 9.3],
+            ['Tokyo', 9.0],
+            ['Cairo', 8.9],
+            ['Dhaka', 8.9],
+            ['Mexico City', 8.9],
+            ['Lima', 8.9]
+        ],
+        dataLabels: {
+            enabled: true,
+            rotation: -90,
+            color: '#FFFFFF',
+            align: 'right',
+            format: '{point.y:.1f}', // one decimal
+            y: 10, // 10 pixels down from the top
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+            }
+        }
+    }]
+    });
     </script>
 
   </body>
