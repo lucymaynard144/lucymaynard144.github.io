@@ -65,7 +65,7 @@
 
       <div class="col-sm-7 graphblock">
           <div class="col-sm-12 graphcontent" id="picture">
-            <a href="http://pregnancyaidcenter.org/contact/" target="_blank"><img src="https://goo.gl/images/BM44n4"/></a>
+            <!--<a href="http://pregnancyaidcenter.org/contact/" target="_blank"><img src="https://goo.gl/images/BM44n4" alt="Pregnancy Aid Center"/>-->
           </div>
       </div>
     </div><!--closes graphcontainer one-->
@@ -77,7 +77,7 @@
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>A survey conducted by the Maryland Pregnancy Risk Assessment Monitoring System (PRAMS) found 20.5 percent of women were uninsured before pregnancy. A majority of the surveyed women got insurance during their pregnancy and then went back to being uninsured postpartum. This chart shows the percentage range for women's insurance status before, during and after pregnancy.</p>
+          <p>A survey conducted by the Maryland Pregnancy Risk Assessment Monitoring System found 20.5 percent of women were uninsured before pregnancy. A majority of the surveyed women got insurance during their pregnancy and then went back to being uninsured postpartum. This chart shows the percentage range for women's insurance status before, during and after pregnancy.</p>
         </div>
       </div>
 
@@ -94,7 +94,7 @@
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>Women who begin prenatal care in the first trimester are more likely to have healthy babies, the CDC reports. But access to early prenatal care is not equal between white, black and hispanic infants. From 2012-2014, a black infant was 24 percent less likely and a hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
+          <p>Women who begin prenatal care in the first trimester are more likely to have healthy babies, the CDC reports. But access to early prenatal care is not equal between white, black and Hispanic infants. From 2012-2014, a black infant was 24 percent less likely and a hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
         </div>
       </div>
 
@@ -111,7 +111,7 @@
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>Insurance is not the only factor that determines whether women initiate prenatal care. This chart shows the survey results from a poll conducted by the Maryland Pregnancy Risk Assessment Monitoring system of 4,548 Maryland mothers who gave birth between January 1, 2009 and December 31, 2011. The women surveyed could select multiple responses for why they would not get early prenatal care.</p>
+          <p>Insurance is not the only factor that determines whether women initiate prenatal care. The Maryland Pregnancy Risk Assessment Monitoring system of Maryland mothers who did not receive early prenatal care who gave birth between January 1, 2009 and December 31, 2011. The women surveyed could select multiple responses for why they did not get early prenatal care. This chart shows the percentage of women who gave each response.</p>
         </div>
       </div>
 
@@ -180,78 +180,66 @@
         type: 'columnrange',
         inverted: true
     },
-
+    credits: {
+      enabled: false
+    },
     title: {
-        text: 'Temperature variation by month'
+        text: 'Percentage of Uninsured Women Before, During and After Pregnancy'
     },
-
     subtitle: {
-        text: 'Observed in Vik i Sogn, Norway'
+        text: 'Source: <a href="https://www.cdc.gov/prams/pramstat/pdfs/mch-indicators/PRAMS-Maryland_508tagged.pdf">Maryland Vital Statistics Annual Report 2015</a>'
     },
-
     xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        categories: ['Pre-Pregnancy', 'During Pregnancy', 'Postpartum']
     },
-
     yAxis: {
         title: {
-            text: 'Temperature ( °C )'
+            text: 'Percentage Range of Uninsured Women'
         }
     },
-
     tooltip: {
-        valueSuffix: '°C'
+        enabled: false
     },
-
     plotOptions: {
         columnrange: {
             dataLabels: {
                 enabled: true,
                 formatter: function () {
-                    return this.y + '°C';
+                    return this.y + '%';
                 }
             }
         }
     },
-
     legend: {
         enabled: false
     },
-
     series: [{
-        name: 'Temperatures',
+        name: 'Percentrange',
         data: [
-            [-9.7, 9.4],
-            [-8.7, 6.5],
-            [-3.5, 9.4],
-            [-1.4, 19.9],
-            [0.0, 22.6],
-            [2.9, 29.5],
-            [9.2, 30.7],
-            [7.3, 26.5],
-            [4.4, 18.0],
-            [-3.1, 11.4],
-            [-5.2, 10.4],
-            [-13.5, 9.8]
+            [17.9, 23.3],
+            [4.4, 7.4],
+            [13.7, 18.6]
         ]
     }]
-
     });
 
     Highcharts.chart('barchart', {
     chart: {
         type: 'column'
     },
+    credits: {
+      enabled: false
+    },
     title: {
-        text: 'World\'s largest cities per 2014'
+        text: 'Percentage of Infants Who Received Early Prenatal Care by Race'
     },
     subtitle: {
-        text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+        text: 'Source: <a href="https://health.maryland.gov/vsa/Documents/15annual.pdf">Maryland Pregnancy Risk Assessment Monitoring System</a>'
     },
     xAxis: {
         type: 'category',
         labels: {
-            rotation: -45,
+            rotation: 0,
             style: {
                 fontSize: '13px',
                 fontFamily: 'Verdana, sans-serif'
@@ -261,7 +249,7 @@
     yAxis: {
         min: 0,
         title: {
-            text: 'Population (millions)'
+            text: 'Percent'
         }
     },
     plotOptions: {
@@ -273,41 +261,24 @@
         enabled: false
     },
     tooltip: {
-        pointFormat: 'Population in 2008: <b>{point.y:.1f} millions</b>'
+        pointFormat: 'Average Percentage in 2012-2014: <b>{point.y:.1f} %</b>'
     },
     series: [{
-        name: 'Population',
+        name: 'Race',
         data: [
-            ['Shanghai', 23.7],
-            ['Lagos', 16.1],
-            ['Istanbul', 14.2],
-            ['Karachi', 14.0],
-            ['Mumbai', 12.5],
-            ['Moscow', 12.1],
-            ['São Paulo', 11.8],
-            ['Beijing', 11.7],
-            ['Guangzhou', 11.1],
-            ['Delhi', 11.1],
-            ['Shenzhen', 10.5],
-            ['Seoul', 10.4],
-            ['Jakarta', 10.0],
-            ['Kinshasa', 9.3],
-            ['Tianjin', 9.3],
-            ['Tokyo', 9.0],
-            ['Cairo', 8.9],
-            ['Dhaka', 8.9],
-            ['Mexico City', 8.9],
-            ['Lima', 8.9]
+            ['White', 74.2376640177416],
+            ['Black', 53.9892377441634],
+            ['Hispanic', 44.8419797257007]
         ],
         dataLabels: {
             enabled: true,
-            rotation: -90,
+            rotation: 0,
             color: '#FFFFFF',
-            align: 'right',
-            format: '{point.y:.1f}', // one decimal
-            y: 10, // 10 pixels down from the top
+            align: 'center',
+            format: '{point.y:.1f} %', // one decimal
+            y: 40, // 10 pixels down from the top
             style: {
-                fontSize: '13px',
+                fontSize: '18px',
                 fontFamily: 'Verdana, sans-serif'
             }
           }
@@ -316,18 +287,21 @@
 
       Highcharts.chart('columnchart', {
     chart: {
-        type: 'column'
+        type: 'bar'
+    },
+    credits: {
+      enabled: false
     },
     title: {
-        text: 'World\'s largest cities per 2014'
+        text: 'Factors That Prevent Pregnant Women From Getting Early Prental Care'
     },
     subtitle: {
-        text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+        text: 'Source: <a href="https://phpa.health.maryland.gov/mch/Documents/prams_initiation_of_prenatal_care.pdf">Maryland Pregnancy Risk Assessment Monitoring System</a>'
     },
     xAxis: {
         type: 'category',
         labels: {
-            rotation: -45,
+            rotation: 0,
             style: {
                 fontSize: '13px',
                 fontFamily: 'Verdana, sans-serif'
@@ -337,7 +311,7 @@
     yAxis: {
         min: 0,
         title: {
-            text: 'Population (millions)'
+            text: 'Percentage'
         }
     },
     plotOptions: {
@@ -349,39 +323,31 @@
         enabled: false
     },
     tooltip: {
-        pointFormat: 'Population in 2008: <b>{point.y:.1f} millions</b>'
+        pointFormat: 'Pecentage of women who said {point.name} affected their ability to get early prenatal care: <b>{point.y:.1f} %</b>',
+        headerFormat: ''
     },
     series: [{
-        name: 'Population',
+        name: 'Factors',
         data: [
-            ['Shanghai', 23.7],
-            ['Lagos', 16.1],
-            ['Istanbul', 14.2],
-            ['Karachi', 14.0],
-            ['Mumbai', 12.5],
-            ['Moscow', 12.1],
-            ['São Paulo', 11.8],
-            ['Beijing', 11.7],
-            ['Guangzhou', 11.1],
-            ['Delhi', 11.1],
-            ['Shenzhen', 10.5],
-            ['Seoul', 10.4],
-            ['Jakarta', 10.0],
-            ['Kinshasa', 9.3],
-            ['Tianjin', 9.3],
-            ['Tokyo', 9.0],
-            ['Cairo', 8.9],
-            ['Dhaka', 8.9],
-            ['Mexico City', 8.9],
-            ['Lima', 8.9]
+            ['Keeping pregnancy secret', 78],
+            ['Too busy', 74],
+            ['No child care', 73],
+            ['No transportation', 69],
+            ['Did not know she was pregnant', 68],
+            ['No Medicaid card', 67],
+            ['No leave', 63],
+            ['No insurance/money', 62],
+            ['Partner did not want pregnancy', 54],
+            ['Could not get appointment', 43],
+            ['Doctor would not start earlier', 31]
         ],
         dataLabels: {
             enabled: true,
-            rotation: -90,
+            rotation: 0,
             color: '#FFFFFF',
             align: 'right',
-            format: '{point.y:.1f}', // one decimal
-            y: 10, // 10 pixels down from the top
+            format: '{point.y}%', // one decimal
+            y: 0, // 10 pixels down from the top
             style: {
                 fontSize: '13px',
                 fontFamily: 'Verdana, sans-serif'
