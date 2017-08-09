@@ -1,0 +1,299 @@
+/* No CSS Reset with Bootstrap */
+/*These initial styles come from here: http://getbootstrap.com/examples/starter-template/starter-template.css*/
+
+/*black background was inspired from one of the example resumes*/
+body {
+  background-color: #232220;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.navbar {
+  font-family: "Libre Franklin";
+  background-color: #0077B4;
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-brand {
+  color: white !important;
+}
+
+/*padding is to get my name down from behind the nav bar*/
+#top {
+  padding: 50px 0 0 0;
+  margin: 0 16px 24px 16px;
+  text-align: center;
+  background-color: white;
+}
+
+/*same boldness as sectionheaders I might decide to change late*/
+#name {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.contactinfo {
+  -webkit-padding-start: 0;
+}
+
+/*I need to remember the li to display things inline*/
+.contactinfo li,.contactinfo li a, .contactinfo li a:hover, .contactinfo li a:visited {
+  color: #0077B4;
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*includes all resume sections except name and contact*/
+#bottom {
+  background-color: white;
+}
+
+/*these two sections are in a div together*/
+#workinternational {
+  padding-bottom: 50px;
+}
+
+/*edu, intl, skills, etc*/
+.sectionheader {
+  font-size: 36px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.jobtitle {
+  font-size: 20px;
+  margin: 4px 0 0 0;
+  text-decoration: underline;
+}
+
+.organization {
+  font-size: 16px;
+}
+
+.date {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/*same styling as .jobtitle*/
+.programtitle {
+  font-size: 20px;
+  margin: 4px 0 0 0;
+  text-decoration: underline;
+}
+
+/*same styling as .organization*/
+.location {
+  font-size: 16px;
+}
+
+/*same styling as .date*/
+.programdate {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/*work, int'l, edu, skills, ref should all have almost the same styling*/
+#workexperience {
+  border: 1px solid black;
+  margin: 0 0 24px 0;
+  background-color: white;
+  padding: 8px 8px;
+}
+
+.jobtitle {
+  margin-left: 6px;
+}
+
+.organization {
+  margin-left: 6px;
+}
+
+.date {
+  margin-left: 6px;
+}
+
+.description {
+  margin-left: 6px;
+  margin-bottom: 4px;
+}
+
+#internationalexperience {
+  border: 1px solid black;
+  background-color: white;
+  padding: 8px 8px;
+}
+
+.programtitle {
+  margin-left: 6px;
+}
+
+.location {
+  margin-left: 6px;
+}
+
+.programdate {
+  margin-left: 6px;
+}
+
+.programdetails {
+  margin-left: 6px;
+  margin-bottom: 4px;
+}
+
+/*skills, edu, ref are in a div*/
+#skills {
+  border: 1px solid black;
+  margin: 0 0 24px 0;
+  background-color: white;
+  padding: 8px 8px;
+}
+
+.skillslist {
+  margin-left: 6px;
+}
+
+#education {
+  border: 1px solid black;
+  margin: 0 0 24px 0;
+  background-color: white;
+  padding: 8px 8px;
+}
+
+.degrees {
+  margin-left: 6px;
+}
+
+#references {
+  border: 1px solid black;
+  background-color: white;
+  padding: 8px 8px;
+}
+
+.refname {
+  text-decoration: underline;
+  font-size: 16px;
+  margin: 6px 0 0 6px;
+}
+
+.refcontactinfo {
+  margin-left: 6px;
+}
+
+/*new addition to my coding*/
+footer {
+  color: white;
+  text-align: center;
+}
+
+/*will need to change the #top margin at each media query*/
+@media only screen and (max-width:767px){
+  #top {
+    margin: 0 1px 16px 1px;
+  }
+
+  .contactinfo {
+    font-size: 18px;
+  }
+
+  #workexperience {
+    border: none;
+    padding: 20px 8px 0 10px;
+    margin-bottom: 4px;
+  }
+
+  #workinternational{
+    padding-bottom: 8px;
+  }
+
+  #internationalexperience {
+    border: none;
+  }
+
+  #skills {
+    border: none;
+    margin-bottom: 4px;
+    padding-top: 0;
+  }
+
+  #education {
+    border: none;
+    margin-bottom: 4px;
+  }
+
+  #references {
+    border: none;
+}
+
+footer {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+}
+
+/*i should have to make almost the same changes as in my previous media query*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #top {
+    margin: 0 1px 16px 1px;
+  }
+
+.contactinfo {
+  font-size: 18px;
+}
+
+  #workexperience {
+    border: none;
+    padding: 20px 8px 0 10px;
+    margin-bottom: 8px;
+  }
+
+  #internationalexperience {
+    border: none;
+  }
+
+  #workinternational {
+  padding-bottom: 5px;
+  }
+
+  #skills {
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 8px;
+  }
+
+  #education {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 12px;
+  }
+
+  #references {
+    border: none;
+  }
+
+  footer {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #name {
+    font-size: 64px;
+  }
+
+  .contactinfo {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #name {
+    font-size: 72px;
+  }
+
+  .contactinfo {
+    font-size: 22px;
+  }
+}
