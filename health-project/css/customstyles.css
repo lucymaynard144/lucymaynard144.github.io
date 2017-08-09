@@ -70,19 +70,23 @@ body {
   width: 100%;
 }
 
-#barchart {
-  height: 400px;
-  width: 100%;
-}
-
 #columnchart {
   height: 400px;
   width: 100%;
 }
 
-#fusionmap {
+#barchart {
   height: 400px;
   width: 100%;
+}
+
+#carto {
+  height: 400px;
+  width: 100%;
+}
+
+.sources {
+  text-align: center;
 }
 
 #stackedbar {
@@ -126,4 +130,8 @@ body {
   position: relative;
   float: left;
   top: 100px;
+}
+
+footer {
+  text-align: center;
 }

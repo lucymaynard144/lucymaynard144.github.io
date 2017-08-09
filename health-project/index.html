@@ -41,8 +41,13 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li class="active"><a href="#">Top</a></li>
+            <li><a href="#one">1</a></li>
+            <li><a href="#two">2</a></li>
+            <li><a href="#three">3</a></li>
+            <li><a href="#four">4</a></li>
+            <li><a href="#five">5</a></li>
+            <li><a href="#six">6</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -64,8 +69,7 @@
       </div>
 
       <div class="col-sm-7 graphblock">
-          <div class="col-sm-12 graphcontent" id="picture">
-            <!--<a href="http://pregnancyaidcenter.org/contact/" target="_blank"><img src="https://goo.gl/images/BM44n4" alt="Pregnancy Aid Center"/>-->
+          <div class="col-sm-12 graphcontent" id="picture"> <!--picture of the pregnancy aid cetner-->
           </div>
       </div>
     </div><!--closes graphcontainer one-->
@@ -94,12 +98,12 @@
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>Women who begin prenatal care in the first trimester are more likely to have healthy babies, the CDC reports. But access to early prenatal care is not equal between white, black and Hispanic infants. From 2012-2014, a black infant was 24 percent less likely and a hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
+          <p>Women who begin prenatal care in the first trimester are more likely to have healthy babies, the CDC reports. But access to early prenatal care is not equal between white, black and Hispanic infants. From 2012-2014, a black infant was 24 percent less likely and a Hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
         </div>
       </div>
 
       <div class="col-sm-7 graphblock">
-          <div class="col-sm-12 graphcontent" id="barchart">
+          <div class="col-sm-12 graphcontent" id="columnchart">
           </div>
       </div>
     </div> <!--closes graphcontainer three-->
@@ -116,7 +120,7 @@
       </div>
 
       <div class="col-sm-7 graphblock">
-          <div class="col-sm-12 graphcontent" id="columnchart">
+          <div class="col-sm-12 graphcontent" id="barchart">
           </div>
       </div>
     </div> <!--closes graphcontainer four-->
@@ -128,12 +132,17 @@
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>The CDC uses the term low birthweight to describe babies who are born weighing less than 5 pounds 8 ounces. Infants with low birthweights have a higher risk of respiratory distress, heart problems, anemia and sleep apnea, the CDC reports. This map shows the percentage of low birthweight births in each Maryland county in 2012.</p>
+          <p>The CDC uses the term low birthweight to describe babies who are born weighing less than 5 pounds, 8 ounces. Infants with low birthweights have a higher risk of respiratory distress, heart problems, anemia and sleep apnea, the CDC reports. The counties with the highest percentages of low birthweight births in 2015 were Allegany, Frederick, Montgomery and Baltimore County.</p>
         </div>
       </div>
 
       <div class="col-sm-7 graphblock">
-          <div class="col-sm-12 graphcontent" id="fusionmap">
+          <div class="col-sm-12 graphcontent" id="carto">
+            <iframe width="100%" height="400" frameborder="0" src="https://lucymaynard144.carto.com/builder/6d194750-7d3f-11e7-836b-0ef24382571b/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </div>
+          <div class="sources">
+            <h5>Sources:<a href="https://health.maryland.gov/vsa/Documents/15annual.pdf" target="_blank">Maryland Vital Statistics Annual Report 2015 </a>|<a href="https://fusiontables.google.com/DataSource?docid=1PN6pyJfH57KXWI5GOeilVxfFykcKLElbip-Xxw#rows:id=1" target="_blank"> Google Fusion Tables</a>
+            </h5>
           </div>
       </div>
     </div> <!--closes graphcontainer five-->
@@ -150,7 +159,7 @@
       </div>
 
       <div class="col-sm-7 graphblock">
-          <div class="col-sm-12 graphcontent" id="stackedbar">
+          <div class="col-sm-12 graphcontent" id="stackedbar"><!--the stacked bar chart i'm building-->
             <div id="firsttrimester"></div>
             <div id="secondtrimester"></div>
             <div id="thirdtrimester"></div>
@@ -159,7 +168,9 @@
       </div>
     </div> <!--closes graphcontainer six-->
 
-
+    <footer>
+      <p>Copyright Lucy Maynard</p>
+    </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -174,8 +185,8 @@
     <script src="chart/Highcharts-5.0.13/code/highcharts-more.js"></script>
 
     <script>
+    //nine months of insurance
     Highcharts.chart('columnrange', {
-
     chart: {
         type: 'columnrange',
         inverted: true
@@ -223,7 +234,8 @@
     }]
     });
 
-    Highcharts.chart('barchart', {
+    //the race for early prenatal care
+    Highcharts.chart('columnchart', {
     chart: {
         type: 'column'
     },
@@ -281,11 +293,12 @@
                 fontSize: '18px',
                 fontFamily: 'Verdana, sans-serif'
             }
-          }
-        }]
-      });
+        }
+      }]
+    });
 
-      Highcharts.chart('columnchart', {
+    //what keeps women from initiating early prenatal care
+    Highcharts.chart('barchart', {
     chart: {
         type: 'bar'
     },
