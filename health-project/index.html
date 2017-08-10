@@ -141,7 +141,7 @@
             <iframe width="100%" height="400" frameborder="0" src="https://lucymaynard144.carto.com/builder/6d194750-7d3f-11e7-836b-0ef24382571b/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
           </div>
           <div class="sources">
-            <h5>Sources:<a href="https://health.maryland.gov/vsa/Documents/15annual.pdf" target="_blank">Maryland Vital Statistics Annual Report 2015 </a>|<a href="https://fusiontables.google.com/DataSource?docid=1PN6pyJfH57KXWI5GOeilVxfFykcKLElbip-Xxw#rows:id=1" target="_blank"> Google Fusion Tables</a>
+            <h5>Sources: <a href="https://health.maryland.gov/vsa/Documents/15annual.pdf" target="_blank">Maryland Vital Statistics Annual Report 2015 </a>|<a href="https://fusiontables.google.com/DataSource?docid=1PN6pyJfH57KXWI5GOeilVxfFykcKLElbip-Xxw#rows:id=1" target="_blank"> Google Fusion Tables</a>
             </h5>
           </div>
       </div>
@@ -160,10 +160,25 @@
 
       <div class="col-sm-7 graphblock">
           <div class="col-sm-12 graphcontent" id="stackedbar"><!--the stacked bar chart i'm building-->
-            <div id="firsttrimester"></div>
-            <div id="secondtrimester"></div>
+            <div id="titlediv">When Prental Care Was Begun</div>
+            <button type="button" class="btn btn-primary stepone"><span class="flipflop" id="buttonone">First Trimester Prenatal Care</span><span class="flipflop" id="buttontwo">Second Trimester Prenatal Care</span><span class="flipflop" id="buttonthree">Third Trimester and No Prenatal Care</span></button>
+            <div class="explainertext">
+              <div id="initialexplainertext">98% of Women in Maryland initiated prenatal care before the third trimester. Click the button to view the percentage of women who got care in each trimester.</div>
+              <div id="firstexplainertext">79% of women in Maryland initiated prenatal care in the first trimester.</div>
+              <div id="secondexplainertext">19% of women in Maryland initiated prenatal care in the second trimester.</div>
+              <div id="thirdandnoexplainertext">Only two percent of women in Maryland initiated prenatal care in the third trimester or not at all.</div>
+            </div>
+            <div id="firsttrimester">
+              <div id="firsttrimestertext" class="percents">79%</div>
+            </div>
+            <div id="secondtrimester">
+              <div id="secondtrimestertext" class="percents">19%</div>
+            </div>
             <div id="thirdtrimester"></div>
             <div id="nocare"></div>
+            <!--<div id="zeropercent">0%</div>
+            <div id="percentofwomen">Percent of Women</div>
+            <div id="hundredpercent">100%</div>-->
           </div>
       </div>
     </div> <!--closes graphcontainer six-->
@@ -370,5 +385,9 @@
     });
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -94,6 +94,48 @@ body {
   width: 100%;
 }
 
+#titlediv {
+  height: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  top: 10px;
+}
+
+.btn {
+  position: relative;
+  top: 70px;
+}
+
+#buttontwo {
+  display: none;
+}
+
+#buttonthree {
+  display: none;
+}
+
+.explainertext {
+  position: relative;
+  font-size: 13px;
+  width: 475px;
+  float: right;
+  top: 70px;
+}
+
+#firstexplainertext {
+  display: none;
+}
+
+#secondexplainertext {
+  display: none;
+}
+
+#thirdandnoexplainertext {
+  display: none;
+}
+
 #firsttrimester {
   height: 200px;
   width: 79%;
@@ -102,6 +144,15 @@ body {
   position: relative;
   float: left;
   top: 100px;
+  display: none;
+}
+
+.percents {
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  display: none;
 }
 
 #secondtrimester {
@@ -111,6 +162,7 @@ body {
   position: relative;
   float: left;
   top: 100px;
+  display: none;
 }
 
 #thirdtrimester {
@@ -120,7 +172,7 @@ body {
   position: relative;
   float: left;
   top: 100px;
-
+  display: none;
 }
 
 #nocare {
@@ -130,7 +182,37 @@ body {
   position: relative;
   float: left;
   top: 100px;
+  display: none;
 }
+
+/*#zeropercent {
+  height: 10px;
+  width: 30%;
+  border-top: 2px solid #777;
+  position: relative;
+  float: left;
+  top: 120px;
+}
+
+#percentofwomen {
+  height: 10px;
+  width: 40%;
+  text-align: center;
+  border-top: 2px solid #777;
+  position: relative;
+  float: left;
+  top: 120px;
+}
+
+#hundredpercent {
+  height: 10px;
+  width: 30%;
+  border-top: 2px solid #777;
+  text-align: right;
+  position: relative;
+  float: right;
+  top: 120px;
+}*/
 
 footer {
   text-align: center;
