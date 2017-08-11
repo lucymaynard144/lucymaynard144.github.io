@@ -113,8 +113,11 @@ body {
 
 /*the button*/
 .btn {
-  position: relative;
   top: 70px;
+}
+
+#buttonfirst {
+  display: none;
 }
 
 #buttontwo {
@@ -127,10 +130,7 @@ body {
 
 /*the text within the chart that will change with jQuery*/
 .explainertext {
-  position: relative;
   font-size: 13px;
-  width: 475px;
-  float: right;
   top: 70px;
 }
 
@@ -200,6 +200,7 @@ body {
 #zeropercent {
   height: 10px;
   width: 30%;
+  display: none;
   border-top: 2px solid #777;
   position: relative;
   float: left;
@@ -210,6 +211,7 @@ body {
   height: 10px;
   width: 40%;
   text-align: center;
+  display: none;
   border-top: 2px solid #777;
   position: relative;
   float: left;
@@ -219,10 +221,11 @@ body {
 #hundredpercent {
   height: 10px;
   width: 30%;
+  display: none;
   border-top: 2px solid #777;
   text-align: right;
   position: relative;
-  float: right;
+  float: left;
   top: 120px;
 }
 

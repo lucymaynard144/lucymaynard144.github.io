@@ -79,11 +79,11 @@
     <div class="row graphcontainer" id="two">
       <div class="col-sm-3 col-sm-offset-1 textblock">
         <div class="col-sm-12 graphtitle">
-          <h2>Nine Months of Insurance</h2>
+          <h2>Majority of Uninsured Women Who Got Insurance While Pregnant Go Back To Being Uninsured Postpartum</h2>
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>A survey conducted by the Maryland Pregnancy Risk Assessment Monitoring System found 20.5 percent of women were uninsured before pregnancy. A majority of the surveyed women got insurance during their pregnancy and then went back to being uninsured postpartum. This chart shows the percentage range for women's insurance status before, during and after pregnancy.</p>
+          <p>A survey conducted by the Maryland Pregnancy Risk Assessment Monitoring System found 20.5 percent of women were uninsured before pregnancy. A majority of the surveyed women got insurance during their pregnancy and then went back to being uninsured postpartum.</p>
         </div>
       </div>
 
@@ -96,7 +96,7 @@
     <div class="row graphcontainer" id="three">
       <div class="col-sm-3 col-sm-offset-1 textblock">
         <div class="col-sm-12 graphtitle">
-          <h2>The Race for Early Prenatal Care</h2>
+          <h2>White Infants Are More Likely To Have Received Early Prental Care</h2>
         </div>
 
         <div class="col-sm-12 graphtext">
@@ -113,7 +113,7 @@
     <div class="row graphcontainer" id="four">
       <div class="col-sm-3 col-sm-offset-1 textblock">
         <div class="col-sm-12 graphtitle">
-          <h2>What Keeps Women from Initiating Early Prenatal Care</h2>
+          <h2>Insurance Isn't the Only Thing Keeping Women from Initiating Early Prenatal Care</h2>
         </div>
 
         <div class="col-sm-12 graphtext">
@@ -150,38 +150,47 @@
     </div> <!--closes graphcontainer five-->
 
     <div class="row graphcontainer" id="six">
-      <div class="col-sm-3 col-sm-offset-1 textblock">
+      <div class="col-sm-12 col-md-3 col-sm-offset-1 textblock">
         <div class="col-sm-12 graphtitle">
           <h2>When Women are Initiating Prenatal Care</h2>
         </div>
-
         <div class="col-sm-12 graphtext">
           <p>Pregnant women who begin prenatal care in the first trimester are less likely to have pregnancy complications and more likely to have healthy babies, the Maryland Department of Health reports. But prenatal care at all stages of pregnancy is important. This chart shows the percentage of women who initiated prenatal care at each stage of pregnancy.</p>
         </div>
       </div>
 
-      <div class="col-sm-7 graphblock">
+      <div class="col-sm-12 col-md-7 graphblock">
           <div class="col-sm-12 graphcontent" id="stackedbar"><!--the stacked bar chart i'm building-->
-            <div id="titlediv">When Prental Care Was Begun</div>
-            <button type="button" class="btn btn-primary stepone"><span class="flipflop" id="buttonone">First Trimester Prenatal Care</span><span class="flipflop" id="buttontwo">Second Trimester Prenatal Care</span><span class="flipflop" id="buttonthree">Third Trimester and No Prenatal Care</span></button>
-            <div class="explainertext">
-              <div id="initialexplainertext">98% of Women in Maryland initiated prenatal care before the third trimester. Click the button to view the percentage of women who got care in each trimester.</div>
-              <div id="firstexplainertext">79% of women in Maryland initiated prenatal care in the first trimester.</div>
-              <div id="secondexplainertext">19% of women in Maryland initiated prenatal care in the second trimester.</div>
-              <div id="thirdandnoexplainertext">Only two percent of women in Maryland initiated prenatal care in the third trimester or not at all.</div>
-            </div>
-            <div id="firsttrimester">
-              <div id="firsttrimestertext" class="percents">79%</div>
-            </div>
-            <div id="secondtrimester">
-              <div id="secondtrimestertext" class="percents">19%</div>
-            </div>
-            <div id="thirdtrimester"></div>
-            <div id="nocare"></div>
-            <!--<div id="zeropercent">0%</div>
-            <div id="percentofwomen">Percent of Women</div>
-            <div id="hundredpercent">100%</div>
-          </div>-->
+
+            <div class="charttopbox col-sm-12">
+              <div id="titlediv">When Prental Care Was Initiated</div>
+              <div class="buttonandtext col-sm-12">
+                <button type="button" class="btn btn-primary stepone col-sm-4"><span class="flipflop" id="buttonfirst">Back To Beginning</span><span class="flipflop" id="buttonone">First Trimester</span><span class="flipflop" id="buttontwo">Second Trimester</span><span class="flipflop" id="buttonthree">Third Trimester/No Care</span></button>
+
+                <div class="explainertext col-sm-8">
+                  <div id="initialexplainertext">98% of Women in Maryland initiated prenatal care before the third trimester. Click the button to view the percentage of women who got care in each trimester.</div>
+                  <div id="firstexplainertext">79% of women in Maryland initiated prenatal care in the first trimester.</div>
+                  <div id="secondexplainertext">19% of women in Maryland initiated prenatal care in the second trimester.</div>
+                  <div id="thirdandnoexplainertext">Only two percent of women in Maryland initiated prenatal care in the third trimester or not at all.</div>
+                </div>
+              </div><!--closes buttonandtext-->
+            </div><!--closes charttopbox-->
+
+            <div class="chartandaxis">
+              <div id="firsttrimester">
+                <div id="firsttrimestertext" class="percents">79%</div>
+              </div>
+              <div id="secondtrimester">
+                <div id="secondtrimestertext" class="percents">19%</div>
+              </div>
+              <div id="thirdtrimester"></div>
+                <div id="nocare"></div>
+              <div id="zeropercent">0%</div>
+              <div id="percentofwomen">Percent of Women</div>
+              <div id="hundredpercent">100%</div>
+            </div><!--closes chartandaxis-->
+
+          </div>
       </div>
     </div> <!--closes graphcontainer six-->
 
@@ -218,7 +227,10 @@
         text: 'Source: <a href="https://www.cdc.gov/prams/pramstat/pdfs/mch-indicators/PRAMS-Maryland_508tagged.pdf">Maryland Vital Statistics Annual Report 2015</a>'
     },
     xAxis: {
-        categories: ['Pre-Pregnancy', 'During Pregnancy', 'Postpartum']
+        categories: ['Pre-Pregnancy', 'During Pregnancy', 'Postpartum'],
+        labels: {
+          rotation: -45
+        }
     },
     yAxis: {
         title: {
@@ -226,11 +238,12 @@
         }
     },
     tooltip: {
-        enabled: false
+        valueSuffix: '%'
     },
     plotOptions: {
         columnrange: {
             dataLabels: {
+                allowOverlap: true,
                 enabled: true,
                 formatter: function () {
                     return this.y + '%';
@@ -242,7 +255,7 @@
         enabled: false
     },
     series: [{
-        name: 'Percentrange',
+        name: 'Confidence Interval',
         data: [
             [17.9, 23.3],
             [4.4, 7.4],
@@ -260,7 +273,7 @@
       enabled: false
     },
     title: {
-        text: 'Percentage of Infants Who Received Early Prenatal Care by Race'
+        text: 'Percentage of Infants Who Received Early Prenatal Care in 2012-2014 by Race'
     },
     subtitle: {
         text: 'Source: <a href="https://health.maryland.gov/vsa/Documents/15annual.pdf">Maryland Pregnancy Risk Assessment Monitoring System</a>'
@@ -290,7 +303,7 @@
         enabled: false
     },
     tooltip: {
-        pointFormat: 'Average Percentage in 2012-2014: <b>{point.y:.1f} %</b>'
+        enabled: false
     },
     series: [{
         name: 'Race',
@@ -302,10 +315,10 @@
         dataLabels: {
             enabled: true,
             rotation: 0,
-            color: '#FFFFFF',
+            color: '#000000',
             align: 'center',
             format: '{point.y:.1f} %', // one decimal
-            y: 40, // 10 pixels down from the top
+            y: -28,
             style: {
                 fontSize: '18px',
                 fontFamily: 'Verdana, sans-serif'
@@ -331,7 +344,7 @@
     xAxis: {
         type: 'category',
         labels: {
-            rotation: 0,
+            rotation: -20,
             style: {
                 fontSize: '13px',
                 fontFamily: 'Verdana, sans-serif'
@@ -353,8 +366,7 @@
         enabled: false
     },
     tooltip: {
-        pointFormat: 'Pecentage of women who said {point.name} affected their ability to get early prenatal care: <b>{point.y:.1f} %</b>',
-        headerFormat: ''
+        enabled: false
     },
     series: [{
         name: 'Factors',
@@ -363,21 +375,22 @@
             ['Too busy', 74],
             ['No child care', 73],
             ['No transportation', 69],
-            ['Did not know she was pregnant', 68],
+            ['Didn\'t know was pregnant', 68],
             ['No Medicaid card', 67],
             ['No leave', 63],
-            ['No insurance/money', 62],
-            ['Partner did not want pregnancy', 54],
-            ['Could not get appointment', 43],
-            ['Doctor would not start earlier', 31]
+            ['No insurance', 62],
+            ['Partner didn\'t support', 54],
+            ['Couldn\'t get appointment', 43],
+            ['Doctor didn\'t start earlier', 31]
         ],
         dataLabels: {
             enabled: true,
             rotation: 0,
-            color: '#FFFFFF',
+            color: '#000000',
             align: 'right',
-            format: '{point.y}%', // one decimal
-            y: 0, // 10 pixels down from the top
+            format: '{point.y:.1f}%', // one decimal
+            y: 0,
+            x: 60,
             style: {
                 fontSize: '13px',
                 fontFamily: 'Verdana, sans-serif'
