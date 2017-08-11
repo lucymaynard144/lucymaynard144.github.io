@@ -9,6 +9,7 @@ body {
   text-align: center;
 }
 
+/*next 4 divs are all in the topsection*/
 .topbox h1 {
   font-size: 5rem;
   font-weight: 600;
@@ -55,6 +56,7 @@ body {
   font-size: 1.35rem;
 }
 
+/*all five of the charts and the picture*/
 .graphblock {
   padding: 0 20px 0 20px;
   border: 2px solid #777;
@@ -66,21 +68,25 @@ body {
   width: 100%;
 }
 
+/*nine months of insurance*/
 #columnrange {
   height: 400px;
   width: 100%;
 }
 
+/*race for early prenatal care*/
 #columnchart {
   height: 400px;
   width: 100%;
 }
 
+/*keeps women from initiating care*/
 #barchart {
   height: 400px;
   width: 100%;
 }
 
+/*low birthweight birts in maryland counties*/
 #carto {
   height: 400px;
   width: 100%;
@@ -90,6 +96,7 @@ body {
   text-align: center;
 }
 
+/*begin my built-from-html chart*/
 #stackedbar {
   height: 400px;
   width: 100%;
@@ -104,6 +111,7 @@ body {
   top: 10px;
 }
 
+/*the button*/
 .btn {
   position: relative;
   top: 70px;
@@ -117,6 +125,7 @@ body {
   display: none;
 }
 
+/*the text within the chart that will change with jQuery*/
 .explainertext {
   position: relative;
   font-size: 13px;
@@ -137,6 +146,7 @@ body {
   display: none;
 }
 
+/*next 5 divs form the chart*/
 #firsttrimester {
   height: 200px;
   width: 79%;
@@ -186,6 +196,7 @@ body {
   display: none;
 }
 
+/*next 3 divs form the x-axis*/
 #zeropercent {
   height: 10px;
   width: 30%;
@@ -217,4 +228,24 @@ body {
 
 footer {
   text-align: center;
+}
+
+/*extra small devices, phones*/
+@media only screen and (max-width: 767px) {
+
+}
+
+/*small devices, tablets*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*medium devices, desktops*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*large devices, desktops*/
+@media only screen and (min-width: 1200px) {
+
 }
