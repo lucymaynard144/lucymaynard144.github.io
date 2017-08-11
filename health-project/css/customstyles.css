@@ -1,5 +1,6 @@
 body {
   padding-top: 100px;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 12px;
   font: black;
 }
@@ -185,7 +186,7 @@ body {
   display: none;
 }
 
-/*#zeropercent {
+#zeropercent {
   height: 10px;
   width: 30%;
   border-top: 2px solid #777;
@@ -212,7 +213,7 @@ body {
   position: relative;
   float: right;
   top: 120px;
-}*/
+}
 
 footer {
   text-align: center;
