@@ -70,6 +70,10 @@ body {
   margin-left: 6px;
 }
 
+#websitesectionheader {
+  line-height: 38px;
+}
+
 /*text for my homepage*/
 .introduction {
   font-size: 26px;
@@ -192,6 +196,11 @@ body {
   margin: 0 0 24px 0;
   background-color: white;
   padding: 8px 8px;
+}
+
+/*portfolio*/
+.website {
+  font-size: 20px;
 }
 
 /*homepage*/
