@@ -167,6 +167,14 @@ body {
   padding: 8px 8px;
 }
 
+/*homepage*/
+#picture {
+  border: 1px solid black;
+  margin: 0 0 24px 0;
+  background-color: white;
+  padding: 8px 8px;
+}
+
 .skillslist {
   margin-left: 6px;
 }
@@ -246,6 +254,13 @@ footer {
     padding-top: 0;
   }
 
+  /*homepage*/
+  #picture {
+    border: none;
+    margin-bottom: 4px;
+    padding-top: 0;
+  }
+
   #education {
     border: none;
     margin-bottom: 4px;
@@ -298,6 +313,14 @@ footer {
   }
 
   #skills {
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 8px;
+  }
+
+  /*homepage*/
+  #picture {
     border: none;
     padding-bottom: 0;
     padding-top: 0;
