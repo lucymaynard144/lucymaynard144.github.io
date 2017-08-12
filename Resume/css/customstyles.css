@@ -53,6 +53,7 @@ body {
   padding-bottom: 50px;
 }
 
+/*homepage*/
 #homepageintro {
   padding-bottom: 50px;
 }
@@ -230,6 +231,11 @@ footer {
     padding-bottom: 8px;
   }
 
+  /*homepage*/
+  #homepageintro {
+    padding-bottom: 8px;
+  }
+
   #internationalexperience {
     border: none;
   }
@@ -284,6 +290,11 @@ footer {
 
   #workinternational {
   padding-bottom: 5px;
+  }
+
+  /*homepage*/
+  #homepageintro {
+    padding-bottom: 5px;
   }
 
   #skills {
