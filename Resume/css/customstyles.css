@@ -53,6 +53,11 @@ body {
   padding-bottom: 50px;
 }
 
+/*portfolio*/
+#selectedworks {
+  padding-bottom: 50px;
+}
+
 /*homepage*/
 #homepageintro {
   padding-bottom: 50px;
@@ -70,14 +75,36 @@ body {
   font-size: 26px;
 }
 
+.clip {
+  margin-bottom: 12px;
+}
+
 .jobtitle {
   font-size: 20px;
   margin: 4px 0 0 0;
   text-decoration: underline;
+  margin-left: 6px;
+}
+
+/*portfolio*/
+.headline {
+  font-size: 20px;
+  margin: 4px 0 0 0;
+  text-decoration: underline;
+  margin-left: 6px;
 }
 
 .organization {
   font-size: 16px;
+  margin-left: 6px;
+}
+
+/*portfolio*/
+.lede {
+  font-size: 16px;
+  margin-left: 6px;
+  font-style: italic;
+  margin-bottom: 2px;
 }
 
 .date {
@@ -111,20 +138,20 @@ body {
   padding: 8px 8px;
 }
 
-/*for homepage*/
-#homepagetext {
+/*portfolio*/
+#selectedclips {
   border: 1px solid black;
   margin: 0 0 24px 0;
   background-color: white;
   padding: 8px 8px;
 }
 
-.jobtitle {
-  margin-left: 6px;
-}
-
-.organization {
-  margin-left: 6px;
+/*for homepage*/
+#homepagetext {
+  border: 1px solid black;
+  margin: 0 0 24px 0;
+  background-color: white;
+  padding: 8px 8px;
 }
 
 .date {
@@ -228,6 +255,13 @@ footer {
     margin-bottom: 4px;
   }
 
+  /*portfolio*/
+  #selectedclips {
+    border: none;
+    padding: 20px 8px 0 10px;
+    margin-bottom: 4px;
+  }
+
 /*homepage*/
   #homepagetext {
     border: none;
@@ -236,6 +270,11 @@ footer {
   }
 
   #workinternational{
+    padding-bottom: 8px;
+  }
+
+  /*portfolio*/
+  #selectedworks {
     padding-bottom: 8px;
   }
 
@@ -292,6 +331,13 @@ footer {
     margin-bottom: 8px;
   }
 
+  /*portfolio*/
+  #selectedclips {
+    border: none;
+    padding: 20px 8px 0 10px;
+    margin-bottom: 8px;
+  }
+
   /*homepage*/
   #homepagetext {
     border: none;
@@ -305,6 +351,11 @@ footer {
 
   #workinternational {
   padding-bottom: 5px;
+  }
+
+  /*portfolio*/
+  #selectedworks {
+    padding-bottom: 5px;
   }
 
   /*homepage*/
