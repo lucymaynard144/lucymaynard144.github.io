@@ -53,6 +53,10 @@ body {
   padding-bottom: 50px;
 }
 
+#homepageintro {
+  padding-bottom: 50px;
+}
+
 /*edu, intl, skills, etc*/
 .sectionheader {
   font-size: 36px;
@@ -100,6 +104,14 @@ body {
 
 /*work, int'l, edu, skills, ref should all have almost the same styling*/
 #workexperience {
+  border: 1px solid black;
+  margin: 0 0 24px 0;
+  background-color: white;
+  padding: 8px 8px;
+}
+
+/*for homepage*/
+#homepagetext {
   border: 1px solid black;
   margin: 0 0 24px 0;
   background-color: white;
@@ -207,6 +219,13 @@ footer {
     margin-bottom: 4px;
   }
 
+/*homepage*/
+  #homepagetext {
+    border: none;
+    padding: 20px 8px 0 10px;
+    margin-bottom: 4px;
+  }
+
   #workinternational{
     padding-bottom: 8px;
   }
@@ -242,15 +261,22 @@ footer {
     margin: 0 1px 16px 1px;
   }
 
-.contactinfo {
-  font-size: 18px;
-}
+  .contactinfo {
+    font-size: 18px;
+  }
 
   #workexperience {
     border: none;
     padding: 20px 8px 0 10px;
     margin-bottom: 8px;
   }
+
+  /*homepage*/
+  #homepagetext {
+    border: none;
+    padding: 20px 8px 0 10px;
+    margin-bottom: 8px;
+    }
 
   #internationalexperience {
     border: none;
