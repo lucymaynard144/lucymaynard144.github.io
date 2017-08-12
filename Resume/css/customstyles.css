@@ -94,7 +94,7 @@ body {
 .headline {
   font-size: 20px;
   margin: 4px 0 0 0;
-  text-decoration: underline;
+  text-decoration: none;
   margin-left: 6px;
 }
 
@@ -199,6 +199,14 @@ body {
 }
 
 /*portfolio*/
+#webpages {
+  border: 1px solid black;
+  margin: 0 0 24px 0;
+  background-color: white;
+  padding: 8px 8px;
+}
+
+/*portfolio*/
 .website {
   font-size: 20px;
 }
@@ -212,6 +220,11 @@ body {
 }
 
 .skillslist {
+  margin-left: 6px;
+}
+
+/*portfolio*/
+.webpagelist {
   margin-left: 6px;
 }
 
@@ -302,11 +315,24 @@ footer {
     padding-top: 0;
   }
 
+  /*portfolio*/
+  #webpages {
+    border: none;
+    margin-bottom: 4px;
+    padding-top: 0;
+  }
+
   /*homepage*/
   #picture {
     border: none;
     margin-bottom: 4px;
     padding-top: 0;
+  }
+
+  /*portfolio*/
+  .webpagelist {
+    padding-bottom: 8px;
+    padding-top: 6px;
   }
 
   #education {
@@ -377,6 +403,19 @@ footer {
     padding-bottom: 0;
     padding-top: 0;
     margin-bottom: 8px;
+  }
+
+  /*portfolio*/
+  #webpages {
+    border: none;
+    padding-bottom: 20px;
+    padding-top: 0;
+    margin-bottom: 8px;
+  }
+
+  /*portfolio*/
+  .webpagelist {
+    padding-top: 6px;
   }
 
   /*homepage*/
