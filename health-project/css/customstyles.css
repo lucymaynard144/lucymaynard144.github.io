@@ -280,6 +280,10 @@ body {
   top: 120px;
 }
 
+.stackedbarsources {
+  text-align: center;
+}
+
 footer {
   text-align: center;
 }

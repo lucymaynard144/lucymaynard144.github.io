@@ -170,16 +170,17 @@
       <div class="col-sm-12 col-md-7 graphblock">
           <div class="col-sm-12 graphcontent" id="stackedbar"><!--the stacked bar chart i'm building-->
 
-            <div class="charttopbox col-sm-12">
+            <div class="charttopbox col-sm-12 row">
               <div id="titlediv">When Prental Care Was Initiated</div>
               <div class="buttonandtext col-sm-12">
-                <button type="button" class="btn btn-primary stepone col-sm-4"><span class="flipflop" id="buttonfirst">Back To Beginning</span><span class="flipflop" id="buttonone">First Trimester</span><span class="flipflop" id="buttontwo">Second Trimester</span><span class="flipflop" id="buttonthree">Third Trimester/No Care</span></button>
-
-                <div class="explainertext col-sm-8">
+                <div class="thebutton">
+                  <button type="button" class="btn btn-primary stepone col-sm-5"><span class="flipflop" id="buttonfirst">Back To Beginning</span><span class="flipflop" id="buttonone">Click To Start</span><span class="flipflop" id="buttontwo">Second Trimester</span><span class="flipflop" id="buttonthree">Third Trimester/No Care</span></button>
+                </div>
+                <div class="explainertext col-sm-7">
                   <div id="initialexplainertext">98% of Women in Maryland initiated prenatal care before the third trimester. Click the button to view the percentage of women who got care in each trimester.</div>
                   <div id="firstexplainertext">79% of women in Maryland initiated prenatal care in the first trimester.</div>
                   <div id="secondexplainertext">19% of women in Maryland initiated prenatal care in the second trimester.</div>
-                  <div id="thirdandnoexplainertext">Only two percent of women in Maryland initiated prenatal care in the third trimester or not at all.</div>
+                  <div id="thirdandnoexplainertext">Only two percent of women initiated prenatal care in the third trimester or not at all.</div>
                 </div>
               </div><!--closes buttonandtext-->
             </div><!--closes charttopbox-->
@@ -198,6 +199,10 @@
               <div id="hundredpercent">100%</div>
             </div><!--closes chartandaxis-->
           </div><!--closes stackedbar-->
+          <div class="stackedbarsources">
+            <h5>Source: <a href="https://phpa.health.maryland.gov/mch/Documents/prams_initiation_of_prenatal_care.pdf" target="_blank">Maryland Pregnancy Risk Assessment Monitoring System</a>
+            </h5>
+          </div>
       </div><!--closes graphblock-->
     </div> <!--closes graphcontainer six-->
 
@@ -414,7 +419,7 @@
 
     <script src="js/scripts.js"></script>
 
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5971095d2bf8cd8f"></script> 
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5971095d2bf8cd8f"></script>
 
   </body>
 </html>
