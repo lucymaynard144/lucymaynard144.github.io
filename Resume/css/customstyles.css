@@ -77,6 +77,7 @@ body {
 /*text for my homepage*/
 .introduction {
   font-size: 26px;
+  text-align: center;
 }
 
 .clip {
@@ -209,14 +210,6 @@ body {
 /*portfolio*/
 .website {
   font-size: 20px;
-}
-
-/*homepage*/
-#picture {
-  border: 1px solid black;
-  margin: 0 0 24px 0;
-  background-color: white;
-  padding: 8px 8px;
 }
 
 .skillslist {
