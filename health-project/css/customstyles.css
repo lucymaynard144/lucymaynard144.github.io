@@ -41,10 +41,6 @@ body {
   font-size: 18px;
 }
 
-#texttwo {
-  float: right;
-}
-
 .graphcontainer {
   margin: 0 0 20px 0;
   padding: 20px 20px;
@@ -72,12 +68,19 @@ body {
 }
 
 /*all five of the charts and the picture*/
-.graphblock {
+.graphcontent {
   padding: 0 20px 0 20px;
   border: 2px solid #777;
 }
 
-.graphpicture {
+.picturetext {
+  width: 400px;
+  text-align: center;
+  
+}
+
+#picture {
+  border: none;
   text-align: center;
 }
 
@@ -101,7 +104,7 @@ body {
 
 /*low birthweight birts in maryland counties*/
 #carto {
-  height: 400px;
+  height: 410px;
   width: 100%;
 }
 
@@ -158,6 +161,7 @@ body {
 
 .sources {
   text-align: center;
+  font-size: 14px;
 }
 
 /*begin my built-from-html chart*/
@@ -304,7 +308,17 @@ footer {
 
 /*extra small devices, phones*/
 @media only screen and (max-width: 767px) {
+  #stackedbar {
+    height: 480px;
+  }
 
+  .flipflop {
+    font-size: 12px;
+  }
+
+  .percents {
+    font-size: 24px;
+  }
 }
 
 /*small devices, tablets*/
