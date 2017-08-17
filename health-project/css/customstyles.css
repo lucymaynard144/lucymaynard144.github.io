@@ -20,8 +20,12 @@ body {
   font-weight: 400;
   color: #777;
   margin: 15px 0 20px 0;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+#name {
   font-style: italic;
-  text-transform: uppercase:
 }
 
 .lowercase span {
@@ -42,8 +46,8 @@ body {
 }
 
 .graphcontainer {
-  margin: 0 0 20px 0;
-  padding: 20px 20px;
+  margin: 0 0;
+  padding: 0 0;
 }
 
 .textblock {
