@@ -19,7 +19,7 @@ body {
 
 /*padding is to get my name down from behind the nav bar*/
 #top {
-  padding: 50px 0 0 0;
+  padding: 50px 20px 10px 20px;
   margin: 0 16px 24px 16px;
   text-align: center;
   background-color: white;
@@ -46,6 +46,10 @@ body {
 /*includes all resume sections except name and contact*/
 #bottom {
   background-color: white;
+}
+
+.introduction {
+  padding: 30px 30px;
 }
 
 /*these two sections are in a div together*/
@@ -110,6 +114,36 @@ body {
   margin-left: 6px;
   font-style: italic;
   margin-bottom: 2px;
+}
+
+#clipdescription1 {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#clipdescription2 {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#clipdescription3 {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#clipdescription4 {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#clipdescription5 {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#clipdescription6 {
+  font-weight: 800;
+  font-size: 16px;
 }
 
 .date {
@@ -256,8 +290,13 @@ footer {
 
 /*will need to change the #top margin at each media query*/
 @media only screen and (max-width:767px){
+  #name {
+    line-height: 55px;
+  }
+
   #top {
     margin: 0 1px 16px 1px;
+    padding-top: 60px;
   }
 
   .contactinfo {
@@ -268,6 +307,10 @@ footer {
     border: none;
     padding: 20px 8px 0 10px;
     margin-bottom: 4px;
+  }
+
+  .sectionheader {
+    line-height: 40px;
   }
 
   /*portfolio*/
