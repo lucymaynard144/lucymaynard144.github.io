@@ -36,18 +36,13 @@ body {
   font-size: 1.75rem;
 }
 
-.textcontainer {
-  margin: 0 0 20px 0;
-  padding: 10px 20px;
-}
-
 .articletext {
   font-size: 18px;
 }
 
-.graphcontainer {
-  margin: 0 0;
-  padding: 0 0;
+.graphcontainer , .textcontainer, .topsection {
+  margin: 5px 0;
+  padding: 10px 0;
 }
 
 .textblock {
@@ -74,11 +69,12 @@ body {
 /*all five of the charts and the picture*/
 .graphcontent {
   padding: 0 20px 0 20px;
+  margin: 0 5px 0 5px;
   border: 2px solid #777;
 }
 
 .picturetext {
-  width: 400px;
+  width: 100%;
   text-align: center;
 }
 
@@ -315,6 +311,25 @@ footer {
 
 /*extra small devices, phones*/
 @media only screen and (max-width: 767px) {
+  .legendbox {
+    margin-right: 10px;
+    padding: 10px 0;
+    width: 80%;
+    height: 180px;
+    border: 1px solid #aaa;
+    position: relative;
+    background-color: #eee;
+  }
+
+  .sources {
+    padding-top: 10px;
+  }
+
+  .graphtitle {
+    border-top: 2px solid #777;
+    padding-top: 10px;
+  }
+
   #stackedbar {
     height: 480px;
   }

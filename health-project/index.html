@@ -62,8 +62,7 @@
     <div class="row graphcontainer" id="two">
       <div class="col-md-6 col-md-offset-1 textblock textone">
         <div class="col-sm-12 articletext">
-          <p>MARYLAND - The percentage of women receiving early prenatal care in Maryland increased from 82 percent in 2011 to 83 percent in 2013, despite the fact that the Affordable Care Act requires all insurance plans to cover maternal and newborn care-which includes early prenatal care-state data shows.</p>
-          <p>This is a negligible increase.</p>
+          <p>MARYLAND - The percentage of women receiving early prenatal care in Maryland increased from 82 percent in 2011 to 83 percent in 2013-a negligible increase in light of the fact that the Affordable Care Act requires all insurance plans to cover maternal and newborn care-state data shows.</p>
           <p>A Maryland Pregnancy Risk Assessment Monitoring System survey reported the following statistics for 2013:</p>
             <ul>
               <li>20.5 percent of women were uninsured before becoming pregnant.</li>
@@ -73,9 +72,9 @@
         </div>
       </div>
 
-      <div class="col-md-5 graphpciture">
+      <div class="col-md-5 graphpicture">
         <div class="col-sm-12 graphcontent" id="picture">
-          <img id="image" src="http://pregnancyaidcenter.org/wp-content/uploads/2013/09/PAC2_house.jpg" alt="Pregnancy Aid Center" width="400" height="300">
+          <img id="image" src="http://pregnancyaidcenter.org/wp-content/uploads/2013/09/PAC2_house.jpg" alt="Pregnancy Aid Center" width="100%" height="300">
         </div>
         <div class="col-sm-12 graphtext">
           <p>One of the clinics owned and operated by Pregnancy Aid Centers, Inc. (PAC), a non-profit women's health clinic. Organizations such as the Pregnancy Aid Center are still needed for some pregnant women to get early prenatal care. (Pregnancy Aid Center, Inc.)</p>
@@ -88,7 +87,7 @@
       <div class="col-md-12 articletext">
         <p>This means a majority of uninsured women were getting health care for all or part of their pregnancy and then going back to being uninsured after their pregnancy.</p>
         <p>Women who qualify for Medicaid because of their pregnancy “can retain coverage for about two months postpartum,” Brittany Fowler, deputy director of communications for the Maryland Department of Health, said.</p>
-        <p>Private and marketplace insurance plans under the Affordable Care Act also only provide postpartum care for eight weeks, according to the Maryland Department of Health.</p>
+        <p>Private and marketplace insurance plans under the Affordable Care Act only provide postpartum care for eight weeks, according to the Maryland Department of Health.</p>
         <p>“This allows the mother to get her two postpartum appointments,” Jelacic said.</p>
         <p>The first postpartum appointment is to discuss the delivery, birth control, breastfeeding and to check for infection, Jelacic said.</p>
         <p>“The second appointment is to medically clear the patient to return to work or school to be sure they have fully healed and to administer birth control if the patient desires it,” Jelacic said.</p>
@@ -122,7 +121,7 @@
             <li>60.3 percent of live-birth black babies received early prenatal care.</li>
             <li>52.3 percent of live-birth Hispanic babies received early prenatal care.</li>
           </ul>
-        <p>This means a black infant was 24 percent less likely and a Hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
+        <p>This means a black infant was 24 percent less likely than a white infant to have received early prenatal care. And a Hispanic infant was 39 percent less likely than a white infant to have received early prenatal care.</p>
         <p>“Many pregnant women do not get the care they need when they need it,” Michele Kling, a March of Dimes spokesperson said. “[This can be the case for] women of all races and ethnicities and from all walks of life.” </p>
         <p>Because of socioeconomic factors, some women are less likely to get the care they need, particularly black and Hispanic women, Kling said.</p>
       </div>
@@ -147,7 +146,7 @@
 
     <div class="row textcontainer" id="textthree">
       <div class="col-md-12 articletext">
-        <p>Maryland expanded Medicaid under the Affordable Care Act, and this expansion “was funded almost entirely by the federal government,” Michel Boudreaux, assistant professor of health services administration at the University of Maryland School of Public Health, said.</p>
+        <p>Maryland expanded Medicaid under the Affordable Care Act, Michel Boudreaux, assistant professor of health services administration at the University of Maryland School of Public Health, said.</p>
         <p>Pregnant women can only qualify for Medicaid if they make under a certain income, Laurie Jelacic, assistant director for the Pregnancy Aid Center, a non-profit women’s health clinic, said.</p>
         <p>“To help more women have coverage during pregnancy, income requirements for Medicaid are much higher for pregnant women then for women who are not pregnant,” Jelacic said.</p>
         <p>But organizations such as the Pregnancy Aid Center are still needed for some pregnant women to get early prenatal care.</p>
@@ -166,7 +165,7 @@
         </div>
 
         <div class="col-sm-12 graphtext">
-          <p>Insurance is not the only factor that determines whether women initiate prenatal care. The Maryland Pregnancy Risk Assessment Monitoring system of Maryland mothers who did not receive early prenatal care who gave birth between January 1, 2009 and December 31, 2011. The women surveyed could select multiple responses for why they did not get early prenatal care. This chart shows the percentage of women who gave each response.</p>
+          <p>Insurance is not the only factor that determines whether women initiate prenatal care. The Maryland Pregnancy Risk Assessment Monitoring system of Maryland surveyed mothers who did not receive early prenatal care who gave birth between January 1, 2009 and December 31, 2011. The women surveyed could select multiple responses for why they did not get early prenatal care. This chart shows the percentage of women who gave each response.</p>
         </div>
       </div>
 
@@ -178,7 +177,7 @@
 
     <div class="row textcontainer" id="textfour">
       <div class="col-md-12 articletext">
-        <p>The Child Trends Data Bank reported expecting mothers who don’t receive early prenatal care are three times more likely to give birth to a low birthweight baby.</p>
+        <p>The Child Trends Data Bank reported that expecting mothers who don’t receive early prenatal care are three times more likely to give birth to a low birthweight baby.</p>
         <p>The CDC uses the term low birthweight to describe babies who are born weighing less than 2500 grams, or 5 pounds, 8 ounces.</p>
         <p>Babies born with a low birthweight have a higher risk of complications such as respiratory distress, sleep apnea, heart problems, anemia, hyperactivity disorders and mental development, the Stanford Lucile Packard Children’s Hospital reported.</p>
       </div>
@@ -403,11 +402,13 @@
         dataLabels: {
             enabled: true,
             allowOverlap: true,
+            crop: false,
+            overflow: 'none',
             rotation: 0,
             color: '#000000',
             align: 'center',
             format: '{point.y:.1f} %', // one decimal
-            y: -28,
+            y: 0,
             style: {
                 fontSize: '18px',
                 fontFamily: 'Verdana, sans-serif'
