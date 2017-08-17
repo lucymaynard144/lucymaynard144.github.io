@@ -311,20 +311,6 @@ footer {
 
 /*extra small devices, phones*/
 @media only screen and (max-width: 767px) {
-  .legendbox {
-    margin-right: 10px;
-    padding: 10px 0;
-    width: 80%;
-    height: 180px;
-    border: 1px solid #aaa;
-    position: relative;
-    background-color: #eee;
-  }
-
-  .sources {
-    padding-top: 10px;
-  }
-
   .graphtitle {
     border-top: 2px solid #777;
     padding-top: 10px;
@@ -345,7 +331,11 @@ footer {
 
 /*small devices, tablets*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
+  #picture {
+    position: relative;
+    width: 70%;
+    left: 140px;
+  }
 }
 
 /*medium devices, desktops*/
