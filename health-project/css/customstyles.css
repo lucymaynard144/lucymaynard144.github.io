@@ -83,6 +83,10 @@ body {
   text-align: center;
 }
 
+#image {
+  border: 2px solid #777;
+}
+
 /*nine months of insurance*/
 #columnrange {
   height: 400px;
@@ -327,10 +331,20 @@ footer {
 
 /*medium devices, desktops*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
+  body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 /*large devices, desktops*/
 @media only screen and (min-width: 1200px) {
+  .explainertext {
+    font-size: 16px;
+  }
 
+  body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
