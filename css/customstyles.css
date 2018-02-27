@@ -272,6 +272,11 @@ footer {
     border: none;
   }
 
+  #builtwebpages
+  {
+    float: right;
+  }
+
   footer {
     padding-bottom: 50px;
     padding-top: 20px;
